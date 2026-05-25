@@ -1,0 +1,445 @@
+.track-shell {
+    --track-bg-1: #081318;
+    --track-bg-2: #10262e;
+    --track-ink: #eaf4ef;
+    --track-muted: #b6c7c0;
+    --track-highlight: #89d136;
+    --track-danger: #d14f52;
+    --track-glass: rgba(255, 255, 255, 0.08);
+    --track-border: rgba(255, 255, 255, 0.16);
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--track-ink);
+    border-radius: 26px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 12% 10%, rgba(137, 209, 54, 0.16) 0%, transparent 40%),
+        radial-gradient(circle at 92% 80%, rgba(255, 166, 60, 0.16) 0%, transparent 40%),
+        linear-gradient(140deg, var(--track-bg-1), var(--track-bg-2));
+    box-shadow: 0 28px 55px rgba(0, 0, 0, 0.22);
+}
+
+.track-shell a {
+    color: inherit;
+}
+
+.track-hero {
+    padding: clamp(1.6rem, 3vw, 2.3rem);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.track-hero-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.1rem;
+}
+
+.track-home {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .9rem;
+    letter-spacing: .03em;
+    color: var(--track-muted);
+}
+
+.track-home:hover {
+    color: var(--track-ink);
+}
+
+.track-title {
+    font-size: clamp(1.7rem, 4vw, 2.45rem);
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    margin-bottom: .55rem;
+}
+
+.track-subtitle {
+    font-size: 1rem;
+    color: var(--track-muted);
+    max-width: 52ch;
+}
+
+.track-form {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: .75rem;
+    max-width: 720px;
+    margin-top: 1.3rem;
+}
+
+.track-input {
+    border: 1px solid var(--track-border);
+    background: var(--track-glass);
+    border-radius: 12px;
+    color: var(--track-ink);
+    min-height: 50px;
+    padding: .78rem .95rem;
+    font-size: .98rem;
+    letter-spacing: .02em;
+}
+
+.track-input::placeholder {
+    color: rgba(234, 244, 239, 0.6);
+}
+
+.track-input:focus {
+    border-color: rgba(137, 209, 54, .95);
+    box-shadow: 0 0 0 .2rem rgba(137, 209, 54, .24);
+    background: rgba(255, 255, 255, .12);
+    color: var(--track-ink);
+}
+
+.track-btn {
+    border: none;
+    min-height: 50px;
+    border-radius: 12px;
+    padding: .78rem 1.2rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    color: #14200f;
+    background: linear-gradient(140deg, var(--track-highlight), #c5ee89);
+    box-shadow: 0 10px 24px rgba(137, 209, 54, 0.3);
+}
+
+.track-btn:hover,
+.track-btn:focus {
+    color: #14200f;
+    transform: translateY(-1px);
+}
+
+.track-alert {
+    margin-top: 1.1rem;
+    border: 1px solid rgba(209, 79, 82, .45);
+    background: rgba(209, 79, 82, .14);
+    color: #ffd9d9;
+    border-radius: 10px;
+    padding: .8rem 1rem;
+}
+
+.track-result {
+    padding: clamp(1.2rem, 2.7vw, 2rem);
+}
+
+.track-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.track-card {
+    border: 1px solid var(--track-border);
+    background: var(--track-glass);
+    backdrop-filter: blur(2px);
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+.track-status-card {
+    grid-column: span 4;
+}
+
+.track-meta-card {
+    grid-column: span 8;
+}
+
+.track-map-card {
+    grid-column: 1 / -1;
+    padding: .8rem;
+}
+
+.delivery-progress-card {
+    position: relative;
+    border: 2px solid rgba(137, 209, 54, 0.95);
+    border-radius: 24px;
+    background: rgba(9, 19, 22, 0.92);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.24);
+    padding: 1.25rem 1.25rem 1.2rem;
+    min-height: 100%;
+}
+
+.delivery-progress-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.delivery-progress-header span {
+    display: block;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+
+.delivery-progress-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.tracker-phase {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.tracker-phase-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 50%;
+    border: 2px solid rgba(137, 209, 54, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(137, 209, 54, 0.08);
+    color: transparent;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.tracker-phase.completed .tracker-phase-icon {
+    color: #89d136;
+    background: rgba(137, 209, 54, 0.18);
+    border-color: #89d136;
+}
+
+.tracker-phase-icon::before {
+    content: "✓";
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.tracker-phase {
+    position: relative;
+    opacity: 0.65;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.tracker-phase.active {
+    opacity: 1;
+}
+
+.tracker-phase-text {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-left: 28px;
+}
+
+.tracker-phase.completed::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(137, 209, 54, 0.18);
+    color: #89d136;
+    font-size: 0.8rem;
+    line-height: 1;
+    box-shadow: 0 0 0 4px rgba(137, 209, 54, 0.08);
+}
+
+.tracker-phase.active::before {
+    background: #89d136;
+    color: #ffffff;
+    box-shadow: 0 0 0 6px rgba(137, 209, 54, 0.25);
+    width: 20px;
+    height: 20px;
+}
+
+.tracker-phase:not(.active) {
+    opacity: 0.7;
+}
+
+.tracker-phase.active .tracker-phase-label {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.tracker-phase:not(.active) .tracker-phase-label {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.tracker-phase-label {
+    color: #ffffff;
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.track-status-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.tracker-tooltip {
+    position: fixed;
+    background: #0d1b1f;
+    border: 2px solid #89d136;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 320px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10001;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+}
+
+.tracker-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+}
+
+.tracker-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.tracker-tooltip.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.tracker-close {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+
+.tracker-close:hover {
+    color: #ffffff;
+}
+
+.tracker-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: rgba(137, 209, 54, 0.3);
+    display: none;
+}
+
+.track-status-wrapper:hover .tracker-tooltip {
+    /* removed hover effect */
+}
+
+.tracker-title {
+    display: block;
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin-bottom: 1.2rem;
+    margin-top: 0.3rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-right: 2rem;
+}
+
+.track-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .75rem;
+}
+
+.track-metric {
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .04);
+    padding: .75rem .85rem;
+}
+
+.track-metric-value {
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: .01em;
+    line-height: 1.25;
+    word-break: break-word;
+}
+
+.track-address {
+    font-size: 1.18rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.track-metric-subtext {
+    font-size: 0.88rem;
+    color: var(--track-muted);
+    margin-top: 0.25rem;
+}
+
+#map {
+    height: min(420px, 58vh);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, .16);
+}
+
+@media (max-width: 991.98px) {
+    .track-status-card,
+    .track-meta-card {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .track-form {
+        grid-template-columns: 1fr;
+    }
+
+    .track-btn {
+        width: 100%;
+    }
+
+    .track-hero-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .track-metrics {
+        grid-template-columns: 1fr;
+    }
+}

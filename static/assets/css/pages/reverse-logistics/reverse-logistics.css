@@ -1,0 +1,732 @@
+/* CSS Variables */
+:root {
+    --primary-color: #82CF2B;
+    --primary-dark: #004274;
+    --secondary-color: #6DB517;
+    --accent-color: #00A2E8;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --bg-light: #f8f9fa;
+    --bg-white: #ffffff;
+    --border-radius: 12px;
+    --border-radius-lg: 16px;
+    --transition: 0.3s ease;
+    --shadow: 0 4px 20px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+/* Reverse Logistics Page Styles */
+
+/* Hero Section - Gradient Based */
+.reverse-logistics-hero-section {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #004274 0%, #006dbc 35%, #82CF2B 100%);
+    overflow: hidden;
+    padding: 6rem 0;
+}
+
+.reverse-logistics-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.animated-shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: float 20s infinite ease-in-out;
+}
+
+.shape-1 {
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    top: -200px;
+    right: -100px;
+    animation-delay: 0s;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 300px;
+    background: rgba(130, 207, 43, 0.3);
+    bottom: -150px;
+    left: -50px;
+    animation-delay: 5s;
+}
+
+.shape-3 {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.15);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: 10s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(10deg);
+    }
+}
+
+.reverse-logistics-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.reverse-logistics-hero-title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, #ffffff 0%, #e0f2fe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 1s ease-out;
+}
+
+.reverse-logistics-hero-subtitle {
+    font-size: 1.4rem;
+    opacity: 0.95;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.reverse-logistics-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.reverse-logistics-feature {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all var(--transition);
+    cursor: pointer;
+}
+
+.reverse-logistics-feature:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.reverse-logistics-feature i {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(130, 207, 43, 0.6);
+}
+
+.reverse-logistics-feature span {
+    display: block;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Overview Section */
+.reverse-logistics-overview-section {
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.reverse-logistics-overview-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(130,207,43,0.05) 0%, rgba(255,255,255,0) 70%);
+    z-index: 0;
+}
+
+.reverse-logistics-overview-container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reverse-logistics-overview-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.reverse-logistics-overview-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+    border-radius: 2px;
+}
+
+.reverse-logistics-overview-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+.reverse-logistics-overview-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 3rem;
+}
+
+.reverse-logistics-overview-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+.reverse-logistics-overview-text p {
+    margin-bottom: 1.5rem;
+    transition: transform var(--transition);
+}
+
+.reverse-logistics-overview-text p:hover {
+    transform: translateX(10px);
+}
+
+.reverse-logistics-overview-highlight {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+    border-radius: var(--border-radius-lg);
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.reverse-logistics-overview-highlight::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(130, 207, 43, 0.05), transparent);
+    transform: rotate(45deg);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) rotate(45deg); }
+}
+
+.highlight-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.highlight-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.highlight-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.highlight-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+/* Services Section */
+.reverse-logistics-services-section {
+    padding: 6rem 0;
+    background: var(--bg-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.reverse-logistics-services-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(130,207,43,0.08) 2px, transparent 2px);
+    background-size: 40px 40px;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.reverse-logistics-services-container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reverse-logistics-services-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.reverse-logistics-services-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+    border-radius: 2px;
+}
+
+.reverse-logistics-services-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 4rem;
+}
+
+.reverse-logistics-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.reverse-logistics-service-card {
+    background: var(--bg-white);
+    border-radius: var(--border-radius-lg);
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+    border: 1px solid #eaeaea;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reverse-logistics-service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.reverse-logistics-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(130,207,43,0.3);
+}
+
+.reverse-logistics-service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.reverse-logistics-service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all var(--transition);
+}
+
+.reverse-logistics-service-card:hover .reverse-logistics-service-icon {
+    background: linear-gradient(135deg, var(--primary-dark), var(--accent-color));
+    transform: scale(1.1);
+}
+
+.reverse-logistics-service-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.reverse-logistics-service-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.reverse-logistics-service-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+/* Features Section */
+.reverse-logistics-features-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4f9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.reverse-logistics-features-blob {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(0,66,116,0.03) 0%, rgba(255,255,255,0) 70%);
+    border-radius: 50%;
+    top: -350px;
+    right: -200px;
+    z-index: 0;
+}
+
+.reverse-logistics-features-container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reverse-logistics-features-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.reverse-logistics-features-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 4rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reverse-logistics-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.reverse-logistics-feature-item {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius-lg);
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255,255,255,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.reverse-logistics-feature-item:hover {
+    transform: translateY(-15px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(130,207,43,0.3);
+    background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(242,246,250,0.95) 100%);
+}
+
+.reverse-logistics-feature-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f0f7ff 0%, #e3f2fd 100%);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--primary-dark);
+    transition: all var(--transition);
+    box-shadow: 0 10px 25px rgba(0,66,116,0.1);
+}
+
+.reverse-logistics-feature-item:hover .reverse-logistics-feature-icon {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-color) 100%);
+    color: #ffffff;
+    transform: rotate(15deg) scale(1.1);
+}
+
+.reverse-logistics-feature-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.reverse-logistics-feature-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* CTA Section */
+.reverse-logistics-cta-section {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-color) 100%);
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.reverse-logistics-cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.reverse-logistics-cta-container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reverse-logistics-cta-content {
+    padding: 0 2rem;
+}
+
+.reverse-logistics-cta-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+}
+
+.reverse-logistics-cta-description {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.reverse-logistics-cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.reverse-logistics-cta-btn {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all var(--transition);
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reverse-logistics-cta-btn.primary {
+    background: white;
+    color: var(--primary-dark);
+    border: 2px solid white;
+}
+
+.reverse-logistics-cta-btn.primary:hover {
+    background: transparent;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255,255,255,0.2);
+}
+
+.reverse-logistics-cta-btn.secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.reverse-logistics-cta-btn.secondary:hover {
+    background: white;
+    color: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+.reverse-logistics-cta-btn i {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    transition: transform var(--transition);
+}
+
+.reverse-logistics-cta-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reverse-logistics-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .reverse-logistics-hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .reverse-logistics-features {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    
+    .reverse-logistics-overview-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .reverse-logistics-features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+    
+    .reverse-logistics-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .reverse-logistics-cta-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .reverse-logistics-hero-section {
+        min-height: 60vh;
+        padding: 4rem 0;
+    }
+    
+    .reverse-logistics-hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .reverse-logistics-hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .reverse-logistics-features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .reverse-logistics-feature {
+        padding: 1.2rem;
+    }
+    
+    .reverse-logistics-services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reverse-logistics-features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reverse-logistics-feature-item {
+        padding: 2rem;
+    }
+    
+    .reverse-logistics-cta-title {
+        font-size: 2.2rem;
+    }
+    
+    .reverse-logistics-cta-description {
+        font-size: 1.1rem;
+    }
+}

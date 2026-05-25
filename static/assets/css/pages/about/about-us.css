@@ -1,0 +1,272 @@
+/* About Us Page Styles */
+.about-hero-section {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: url('../../../images/warehouse.jpg') center center/cover no-repeat;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+
+.about-hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, rgba(0,66,116,0.72) 0%, rgba(130,207,43,0.55) 100%);
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 3rem 1rem;
+    background: rgba(0,0,0,0.32);
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-hero-title {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 1px 2px 8px rgba(0,0,0,0.18);
+}
+
+.about-hero-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.96;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: var(--section-padding-y) 0;
+    background-color: var(--section-bg-1);
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-light));
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 2rem 0;
+    border-left: none;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 2.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--primary-color);
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--primary-light);
+    z-index: 2;
+}
+
+.timeline-year {
+    background-color: var(--primary-color) !important;
+    font-size: var(--text-sm);
+    font-weight: var(--font-bold);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    display: inline-block;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.timeline-title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.timeline-content {
+    font-size: var(--text-md);
+    color: var(--text-secondary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: 0;
+}
+
+/* Values Section */
+.values-section {
+    background-color: var(--section-bg-2);
+    padding: var(--section-padding-y) 0;
+}
+
+.value-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-medium);
+    height: 100%;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.value-title {
+    font-size: var(--text-lg);
+    font-weight: var(--font-bold);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.value-description {
+    color: var(--text-secondary);
+    line-height: var(--line-height-relaxed);
+}
+
+/* Stats Section */
+.stats-section {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #2c3e50 100%);
+    color: white;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.stats-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../../images/warehouse2.png') center/cover;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.stats-content {
+    position: relative;
+    z-index: 1;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+.stat-number {
+    font-size: var(--text-4xl);
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: var(--text-md);
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: var(--font-medium);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-hero-title {
+        font-size: var(--text-3xl);
+    }
+    
+    .timeline-container {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-container::before {
+        left: 0.75rem;
+    }
+    
+    .timeline-item::before {
+        left: -1.5rem;
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+    
+    .value-card {
+        margin-bottom: 2rem;
+    }
+    
+    .stat-number {
+        font-size: var(--text-3xl);
+    }
+}
+
+@media (max-width: 576px) {
+    .about-hero-section {
+        padding: 4rem 0 3rem;
+    }
+    
+    .timeline-item {
+        padding: 1.5rem 0;
+    }
+    
+    .value-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Utilities */
+.about-hero-section.full-vh {
+    /* Account for sticky header so hero fills viewport without being hidden under nav */
+    --main-menu-height: 72px;
+    min-height: calc(100vh - var(--main-menu-height));
+    padding-top: var(--main-menu-height);
+}
+
+@media (max-width: 768px) {
+    .about-hero-section.full-vh {
+        --main-menu-height: 56px;
+        min-height: calc(60vh - var(--main-menu-height));
+        padding-top: var(--main-menu-height);
+    }
+}

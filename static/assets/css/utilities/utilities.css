@@ -1,0 +1,45 @@
+/* Utility classes with extended options */
+.bg-section-1 {
+    background-color: var(--section-bg-1);
+}
+
+.bg-section-2 {
+    background-color: var(--section-bg-2);
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-primary-light {
+    background-color: var(--primary-light) !important;
+}
+
+.bg-primary-lightest {
+    background-color: var(--primary-lightest) !important;
+}
+
+.text-primary-color {
+    color: var(--primary-color) !important;
+}
+
+.text-primary-dark {
+    color: var(--primary-dark) !important;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+/* Fix for visually-hidden class for accessibility */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}

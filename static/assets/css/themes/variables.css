@@ -1,0 +1,97 @@
+:root {
+    /* Color System - Extended with accessibility in mind */
+    --primary-color: #82CF2B;
+    --primary-dark: #69a823;
+    --primary-light: #a5e261;
+    --primary-lightest: #f2faeb;
+    --secondary-color: #343a40;
+    --secondary-light: #6c757d;
+    --secondary-lightest: #f8f9fa;
+    --light-bg: #f8f9fa;
+    --dark-bg: #343a40;
+    --border-color: #dee2e6;
+    --border-focus: #80bdff;
+    --text-primary: #212529;
+    --text-secondary: #505a64; /* Improved contrast from #6c757d */
+    --text-muted: #6c757d;
+    --text-white: #ffffff;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    
+    /* Spacing System - Golden ratio based (1:1.618) */
+    --space-unit: 8px;
+    --space-xxxs: calc(var(--space-unit) * 0.25); /* 2px */
+    --space-xxs: calc(var(--space-unit) * 0.5);   /* 4px */
+    --space-xs: calc(var(--space-unit) * 1);      /* 8px */
+    --space-sm: calc(var(--space-unit) * 1.618);  /* ~13px */
+    --space-md: calc(var(--space-unit) * 2.618);  /* ~21px */
+    --space-lg: calc(var(--space-unit) * 4.236);  /* ~34px */
+    --space-xl: calc(var(--space-unit) * 6.854);  /* ~55px */
+    --space-xxl: calc(var(--space-unit) * 11.09); /* ~89px */
+    
+    /* Section padding - Mathematically balanced */
+    --section-padding-y: var(--space-xl);
+    --section-padding-x: 0;
+    --section-padding-y-mobile: var(--space-lg);
+    
+    /* Border Radius */
+    --border-radius-xs: 2px;
+    --border-radius-sm: 4px;
+    --border-radius: 8px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 24px;
+    
+    /* Box Shadow - Layered for depth */
+    --shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-sm: 0 .125rem .25rem rgba(0,0,0,.075);
+    --shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --shadow-lg: 0 1rem 3rem rgba(0,0,0,.15);
+    --shadow-inner: inset 0 2px 4px rgba(0,0,0,0.05);
+    
+    /* Transition speeds */
+    --transition-fast: 0.15s ease;
+    --transition-medium: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --border-radius-lg: 16px;
+    
+    /* Box Shadow */
+    --shadow-sm: 0 .125rem .25rem rgba(0,0,0,.075);
+    --shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --shadow-lg: 0 1rem 3rem rgba(0,0,0,.15);
+    /* Typography Scale - Based on perfect fourth (1.333) */
+    --text-xs: 0.75rem;     /* 12px */
+    --text-sm: 0.875rem;    /* 14px */
+    --text-base: 1rem;      /* 16px */
+    --text-md: 1.125rem;    /* 18px */
+    --text-lg: 1.333rem;    /* ~21.33px */
+    --text-xl: 1.777rem;    /* ~28.43px */
+    --text-2xl: 2.369rem;   /* ~37.9px */
+    --text-3xl: 3.157rem;   /* ~50.52px */
+    --text-4xl: 4.209rem;   /* ~67.34px */
+    
+    /* Font weights - For better control */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    
+    /* Line heights - For better readability */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+    
+    /* Section alternating colors */
+    --section-bg-1: #ffffff;
+    --section-bg-2: #f8f9fa;
+    
+    /* Z-index layers */
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1020;
+    --z-index-fixed: 1030;
+    --z-index-modal-backdrop: 1040;
+    --z-index-modal: 1050;
+    --z-index-popover: 1060;
+    --z-index-tooltip: 1070;
+}
