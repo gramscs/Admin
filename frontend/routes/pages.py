@@ -1,17 +1,16 @@
-from flask import Blueprint, render_template, abort
-from app import cache
-from jinja2.exceptions import TemplateNotFound
 import logging
+from flask import render_template, abort
+from jinja2.exceptions import TemplateNotFound
+
+from app import cache
+from app.frontend import frontend_bp
 
 logger = logging.getLogger(__name__)
 
-pages_bp = Blueprint("pages", __name__, template_folder="templates")
 
-
-@pages_bp.route("/<page>")
+@frontend_bp.route("/<page>")
 @cache.cached(timeout=300)
 def show_page(page):
-    # Sanitize page name to prevent path traversal
     if not page or "/" in page or "\\" in page or ".." in page:
         logger.warning(f"Invalid page name attempted: {page}")
         abort(404)
