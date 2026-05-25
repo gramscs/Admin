@@ -6,6 +6,7 @@ from flask import (
     jsonify,
     Response,
 )
+from flask_cors import CORS
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 import sys
@@ -243,6 +244,7 @@ def create_app():
 
     models_db.init_app(app)
     limiter.init_app(app)
+    CORS(app, resources={r"/api/*": {"origins": os.getenv("ALLOWED_ORIGINS", "*")}})
     init_logging(app)
 
     auto_create_tables = _should_auto_create_tables()
@@ -270,15 +272,15 @@ def create_app():
         logger.info("AUTO_CREATE_TABLES disabled. Skipping db.create_all() at startup.")
         logger.info("Consignment schema repair runs asynchronously in production.")
 
-    from app.main.routes import main_bp
-    from app.track.routes import track_bp
-    from app.pages.routes import pages_bp
+    from app.frontend import frontend_bp
+    from app.api.public import public_api_bp
+    from app.api.admin_api import admin_api_bp
     from app.admin import admin_bp
     from app.admin.flask_admin_setup import init_flask_admin
 
-    app.register_blueprint(main_bp)
-    app.register_blueprint(track_bp)
-    app.register_blueprint(pages_bp)
+    app.register_blueprint(frontend_bp)
+    app.register_blueprint(public_api_bp)
+    app.register_blueprint(admin_api_bp)
     app.register_blueprint(admin_bp)
 
     # Debug: log registered blueprint names before initializing Flask-Admin
@@ -334,7 +336,7 @@ def create_app():
 
     @app.route("/favicon.ico")
     def favicon():
-        return send_from_directory(app.static_folder, "favicon.ico")
+        return send_from_directory(frontend_bp.static_folder, "favicon.ico")
 
     # Global error handlers
     @app.errorhandler(404)
