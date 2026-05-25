@@ -1,0 +1,45 @@
+/* Shared animation utilities for the site */
+:root{
+  --anim-ease: cubic-bezier(.22,.9,.35,1);
+}
+
+/* Reveal utilities */
+.reveal{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--anim-ease), transform 0.6s var(--anim-ease);
+  will-change: opacity, transform;
+}
+.reveal.in-view{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Directional variants */
+.reveal-up{ transform: translateY(20px); }
+.reveal-left{ transform: translateX(-20px); }
+.reveal-right{ transform: translateX(20px); }
+.reveal.in-view.reveal-left,
+.reveal.in-view.reveal-right{ transform: translateX(0); }
+
+/* Stagger helper classes (transition-delay) */
+.delay-1{ transition-delay: 0.18s; }
+.delay-2{ transition-delay: 0.36s; }
+.delay-3{ transition-delay: 0.52s; }
+.delay-4{ transition-delay: 0.7s; }
+
+/* Simple fade utilities */
+.fade{ opacity: 0; transition: opacity 0.5s var(--anim-ease); }
+.fade.in-view{ opacity: 1; }
+
+/* Floating shapes (used by some pages) */
+.float-shape{ animation: float 18s infinite ease-in-out; }
+@keyframes float{
+  0%,100%{ transform: translateY(0) rotate(0); }
+  50%{ transform: translateY(-24px) rotate(6deg); }
+}
+
+/* Accessibility: reduce motion preference */
+@media (prefers-reduced-motion: reduce){
+  .reveal, .float-shape { transition: none !important; animation: none !important; }
+}

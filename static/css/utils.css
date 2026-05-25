@@ -1,0 +1,31 @@
+/* Small utility helpers and normalized components */
+
+.btn-primary-custom{
+  background:var(--color-primary);
+  color:#fff;
+  border-radius:6px;
+  padding:.6rem 1rem;
+  border:none;
+}
+
+.card-flat{box-shadow:0 6px 18px rgba(11,74,102,0.08);border-radius:10px;padding:1.25rem;background:#fff}
+
+/* Hero helpers */
+.full-bleed{width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw}
+.full-vh{min-height:80vh;display:flex;align-items:center}
+.about-hero-section{color:#fff;padding:3rem 0}
+.bg-section-1{background:linear-gradient(135deg, rgba(0,47,75,0.85), rgba(130,207,43,0.8));background-size:cover;background-position:center}
+.bg-section-2{background:#ffffff}
+
+/* Utility spacing */
+.mt-3-sm{margin-top:var(--space-3)}
+
+/* Reveal animation fallback */
+.reveal{opacity:0;transform:translateY(8px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in-view{opacity:1;transform:none}
+
+/* Image helpers */
+.img-fluid{max-width:100%;height:auto}
+
+/* Accessibility focus */
+:focus{outline:3px solid rgba(130,207,43,0.35);outline-offset:2px}

@@ -1,0 +1,54 @@
+/* Shared component styles: buttons, cards, service-card, feature-item */
+
+.btn {
+  border-radius: 8px;
+}
+
+.btn-primary-custom, .btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  border: 0;
+  padding: .6rem 1rem;
+}
+
+.card, .card-flat { /* align other cards */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(11,74,102,0.06);
+}
+
+.service-card {
+  border-radius: 12px;
+  padding: 1.25rem;
+  background: var(--color-light);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.service-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(11,74,102,0.08)}
+
+.feature-item{
+  display:flex;gap:1rem;align-items:flex-start;padding:1rem;border-radius:10px;background:#fff;border:1px solid rgba(0,0,0,0.03)
+}
+
+.feature-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(135deg, rgba(0,47,75,0.06), rgba(130,207,43,0.04));color:var(--color-primary)}
+
+/* Form controls */
+.input-rounded{border-radius:8px;padding:.6rem .75rem}
+.form-label{font-weight:600;color:var(--color-dark)}
+
+/* Small responsive helpers */
+@media (max-width:767px){
+  .about-hero-title{font-size:1.75rem}
+}
+
+/* Compatibility: make existing utility combos behave like service-card */
+.p-4.rounded.shadow-sm.bg-section-2,
+.p-4.rounded.shadow-sm.bg-section-1{
+  border-radius: 12px;
+  padding: 1.25rem;
+  background: var(--color-light);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.p-4.rounded.shadow-sm.bg-section-2:hover,
+.p-4.rounded.shadow-sm.bg-section-1:hover{
+  transform:translateY(-6px);box-shadow:0 12px 30px rgba(11,74,102,0.08)
+}
