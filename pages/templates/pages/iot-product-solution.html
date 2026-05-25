@@ -1,0 +1,142 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/iot-product-solution/iot-product-solution.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<main>
+        {% set hero_title = 'IoT Product Solutions' %}
+        {% set hero_subtitle = 'Harness the power of IoT for smarter logistics, automation, and real-time supply chain visibility. Our IoT solutions drive efficiency, reduce errors, and enable data-driven decision making for your business.' %}
+        {% set hero_features_html %}
+            <div class="d-flex justify-content-center flex-wrap gap-4 mt-4 hero-features">
+                <div class="hero-feature reveal delay-2"><i class="fa fa-microchip"></i><span>Smart Devices</span></div>
+                <div class="hero-feature reveal delay-2"><i class="fa fa-signal"></i><span>Real-Time Data</span></div>
+                <div class="hero-feature reveal delay-2"><i class="fa fa-cogs"></i><span>Automation</span></div>
+                <div class="hero-feature reveal delay-2"><i class="fa fa-shield"></i><span>Secure Connectivity</span></div>
+            </div>
+        {% endset %}
+        {% include 'partials/about-hero.html' %}
+        <!-- OVERVIEW SECTION -->
+        <section class="overview-section full-bleed" id="overview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Comprehensive IoT Solutions</h2>
+                    <p class="text-muted">Technology-driven automation and monitoring for logistics and industry</p>
+                </div>
+                <div class="overview-content">
+                    <p class="overview-text">
+                        Our IoT product solutions enable seamless integration of smart sensors, automated tracking, and real-time analytics into your logistics and supply chain operations. Experience reduced human error, improved efficiency, and actionable insights with our state-of-the-art IoT platform.
+                    </p>
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-wifi me-2"></i>
+                            Connected Intelligence
+                        </h4>
+                        <p class="mb-0">
+                            We deploy advanced IoT devices, cloud-based analytics, and secure connectivity to deliver end-to-end visibility and control for your assets, inventory, and operations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->
+        <!-- SERVICES SECTION -->
+        <section class="services-section full-bleed" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our IoT Services</h2>
+                    <p class="text-muted">Comprehensive IoT solutions tailored to your business needs</p>
+                </div>
+                <div class="service-cards">
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-thermometer-half"></i>
+                        </div>
+                        <h3>Environmental Monitoring</h3>
+                        <p>
+                            Real-time temperature, humidity, and environmental sensors for sensitive goods and facilities.
+                        </p>
+                    </div>
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-truck"></i>
+                        </div>
+                        <h3>Asset & Fleet Tracking</h3>
+                        <p>
+                            GPS and RFID-based tracking for vehicles, shipments, and high-value assets.
+                        </p>
+                    </div>
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <h3>Process Automation</h3>
+                        <p>
+                            Automated workflows and machine integration for error-free, efficient operations.
+                        </p>
+                    </div>
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-database"></i>
+                        </div>
+                        <h3>Data Analytics</h3>
+                        <p>
+                            Cloud-based analytics and dashboards for actionable business intelligence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES SECTION -->
+        <!-- FEATURES SECTION -->
+        <section class="features-section full-bleed" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Key IoT Features</h2>
+                    <p class="text-muted">What makes our IoT solutions stand out</p>
+                </div>
+                <div class="feature-list">
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-bolt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Instant Alerts</h4>
+                            <p>Automated notifications for anomalies, delays, or security breaches</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Live Analytics</h4>
+                            <p>Real-time dashboards and reporting for data-driven decisions</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Secure Data</h4>
+                            <p>End-to-end encryption and secure cloud storage</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-mobile-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Mobile Access</h4>
+                            <p>Monitor and control your operations from anywhere</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

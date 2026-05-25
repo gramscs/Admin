@@ -1,0 +1,228 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/packaging/packaging.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<main>
+        <!-- HERO SECTION -->
+        <section class="transportation-hero-section">
+            <div class="container">
+                <div class="transportation-hero-content text-center">
+                    <h1 class="transportation-hero-title">Professional Packaging Solutions</h1>
+                    <p class="transportation-hero-subtitle">
+                        Smart, sturdy and cost-effective packaging that protects your products and enhances your brand image. 
+                        Our comprehensive packaging solutions ensure safe delivery for e-commerce, industrial, and retail 
+                        applications with superior protection and customized branding options.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fa fa-shield"></i>
+                            <span>Superior Protection</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-leaf"></i>
+                            <span>Eco-Friendly</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-paint-brush"></i>
+                            <span>Custom Branding</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-money"></i>
+                            <span>Cost Effective</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //HERO SECTION -->
+
+        <!-- OVERVIEW SECTION -->
+        <section class="overview-section" id="overview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Comprehensive Packaging Network</h2>
+                    <p class="text-muted">Professional packaging solutions that speak for your brand</p>
+                </div>
+                
+                <div class="overview-content">
+                    <p class="overview-text">
+                        In the era of e-commerce and delicate shipments, your packaging speaks before your product does. 
+                        We provide comprehensive packaging solutions that ensure safe delivery while enhancing your brand image. 
+                        Our state-of-the-art facilities and expert team deliver precision packaging for various industries 
+                        with customized designs, superior protection, and eco-friendly options.
+                    </p>
+                    
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-cogs me-2"></i>
+                            Smart Packaging Technology
+                        </h4>
+                        <p class="mb-0">
+                            We deploy cutting-edge packaging systems including automated boxing solutions, 
+                            custom design software, quality control testing, eco-friendly material selection, 
+                            brand integration capabilities, and seamless integration with logistics networks 
+                            for end-to-end packaging support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Packaging Services</h2>
+                    <p class="text-muted">Comprehensive packaging solutions tailored to your needs</p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-commerce Ready Packaging</h3>
+                        <p>
+                            Custom designed boxes for Amazon, Flipkart, Meesho sellers with tamper-proof 
+                            and waterproof solutions, ready-to-ship packaging with integrated labels.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-industry"></i>
+                        </div>
+                        <h3>Industrial Packaging</h3>
+                        <p>
+                            Heavy-duty solutions for machinery, equipment, and industrial components with 
+                            wooden crates, shrink wrapping, and anti-rust packaging protection.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-gift"></i>
+                        </div>
+                        <h3>Retail Packaging</h3>
+                        <p>
+                            Attractive POS ready packaging, gift wrapping and luxury solutions for premium 
+                            products with custom branding and professional presentation.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <h3>Export Packaging</h3>
+                        <p>
+                            International shipping compliant packaging with proper cushioning, moisture 
+                            protection, and documentation requirements for global markets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES SECTION -->
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Advanced Packaging Features</h2>
+                    <p class="text-muted">Cutting-edge capabilities that ensure packaging excellence</p>
+                </div>
+                
+                <div class="feature-list">
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Superior Damage Protection</h4>
+                            <p>Less than 0.5% damage rate with advanced cushioning and protective materials</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-leaf"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Eco-Friendly Materials</h4>
+                            <p>Sustainable packaging options with recyclable and biodegradable materials</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-paint-brush"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Custom Brand Integration</h4>
+                            <p>Professional branding with logos, colors, and designs that enhance brand image</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Cost Optimization</h4>
+                            <p>Efficient packaging design that reduces material costs and shipping weights</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-tint"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Waterproof Solutions</h4>
+                            <p>Moisture-resistant packaging for protection against weather and humidity</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Tamper-Proof Design</h4>
+                            <p>Security features that ensure product integrity during transit and storage</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Quick Turnaround</h4>
+                            <p>Fast packaging solutions with same-day and next-day packaging services</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Quality Assurance</h4>
+                            <p>Rigorous testing and quality control for consistent packaging standards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+{% endblock %}

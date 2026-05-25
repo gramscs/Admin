@@ -1,0 +1,143 @@
+/* Footer Styling */
+.site-footer {
+    background-color: var(--dark-bg);
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.footer-heading {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: var(--font-semibold);
+    margin-bottom: 1.25rem;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 50px;
+    background-color: var(--primary-color);
+}
+
+.footer-links a {
+    color: #bbb;
+    font-size: 0.9rem;
+    transition: color var(--transition-fast);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer-address {
+    color: #bbb;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-address a {
+    color: #bbb;
+    transition: color var(--transition-fast);
+    text-decoration: none;
+}
+
+.footer-address a:hover {
+    color: var(--primary-color);
+}
+
+.footer-divider {
+    opacity: 0.2;
+}
+
+.footer-subscribe .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    transition: all var(--transition-fast);
+}
+
+.footer-subscribe .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+}
+
+.footer-subscribe .btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    font-weight: var(--font-medium);
+    padding: 0.75rem 1.5rem;
+    transition: all var(--transition-fast);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.footer-subscribe .btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* Copyright Section */
+.copyright-section {
+    background-color: #222;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    padding: 1rem 0;
+}
+
+.copyright-section .social-links {
+    text-align: right;
+}
+
+.copyright-section .social-link {
+    color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 0.5rem;
+    transition: all var(--transition-fast);
+}
+
+.copyright-section .social-link:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 767.98px) {
+    .footer-heading::after {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+    
+    .footer-links a:hover {
+        transform: none;
+    }
+    
+    .copyright-section .social-links,
+    .copyright-section p {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+}

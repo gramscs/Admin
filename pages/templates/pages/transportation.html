@@ -1,0 +1,180 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/transportation/transportation.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+{% set hero_title = 'Smart Transportation Solutions' %}
+{% set hero_subtitle = 'Comprehensive transportation services providing primary and secondary distribution, last mile delivery, and reverse logistics with cutting-edge technology and real-time tracking systems.' %}
+{% set hero_features_html %}
+  <div class="d-flex justify-content-center flex-wrap gap-4 mt-4">
+    <div><i class="fa fa-truck me-2 text-primary-color"></i>Fleet Management</div>
+    <div><i class="fa fa-map-marker me-2 text-primary-color"></i>Real-time Tracking</div>
+    <div><i class="fa fa-clock-o me-2 text-primary-color"></i>On-time Delivery</div>
+    <div><i class="fa fa-shield me-2 text-primary-color"></i>Secure Transport</div>
+  </div>
+{% endset %}
+{% include 'partials/about-hero.html' %}
+
+
+<!-- OVERVIEW SECTION -->
+<section class="overview-section py-5 bg-section-2 full-bleed">
+  <div class="container text-center">
+
+    <h2 class="section-title reveal section-title-center mb-4">
+      Advanced Transportation Network
+    </h2>
+
+    <p class="text-secondary mx-auto" style="max-width: 850px;">
+      Our transportation division delivers primary and secondary
+      transportation services over long distances with enhanced
+      efficiency and speed. We transport all types of cargo using
+      high-tech facilities and intelligent reporting systems.
+    </p>
+
+    <div class="mt-4 p-4 rounded shadow-sm bg-section-1">
+      <h5 class="fw-bold text-primary-color mb-2">
+        <i class="fa fa-cogs me-2"></i>Innovative Technology Integration
+      </h5>
+      <p class="mb-0 text-secondary">
+        Technology-enabled transportation solutions including load
+        optimization, fleet optimization, hazardous material handling,
+        reefer services, and transportation insurance.
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- //OVERVIEW SECTION -->
+
+
+<!-- SERVICES SECTION -->
+<section class="services-section py-5 bg-section-1 full-bleed">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title section-title-center">
+        Our Transportation Services
+      </h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 rounded shadow-sm bg-section-2 h-100 text-center">
+          <i class="fa fa-exchange text-primary-color mb-3" style="font-size: 28px;"></i>
+          <h6 class="fw-bold">Primary & Secondary Distribution</h6>
+          <p class="text-secondary mb-0">
+            Inter-city and intra-city distribution with optimized routing.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 rounded shadow-sm bg-section-2 h-100 text-center">
+          <i class="fa fa-home text-primary-color mb-3" style="font-size: 28px;"></i>
+          <h6 class="fw-bold">Last Mile Distribution</h6>
+          <p class="text-secondary mb-0">
+            Reliable final-stage delivery with real-time tracking.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 rounded shadow-sm bg-section-2 h-100 text-center">
+          <i class="fa fa-bolt text-primary-color mb-3" style="font-size: 28px;"></i>
+          <h6 class="fw-bold">Express Distribution</h6>
+          <p class="text-secondary mb-0">
+            Time-sensitive deliveries with expedited processing.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 rounded shadow-sm bg-section-2 h-100 text-center">
+          <i class="fa fa-undo text-primary-color mb-3" style="font-size: 28px;"></i>
+          <h6 class="fw-bold">Reverse Logistics</h6>
+          <p class="text-secondary mb-0">
+            Efficient product returns and recycling management.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- //SERVICES SECTION -->
+
+
+<!-- FEATURES SECTION -->
+<section class="features-section py-5 bg-section-2 full-bleed">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title section-title-center">
+        Advanced Transportation Features
+      </h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <div class="d-flex">
+          <i class="fa fa-map-o text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Multiple Location Delivery</h6>
+            <p class="text-secondary mb-0">
+              Coordinated pickup and delivery across locations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="d-flex">
+          <i class="fa fa-cube text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Open & Containerized Trucks</h6>
+            <p class="text-secondary mb-0">
+              Flexible transportation options for various cargo types.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="d-flex">
+          <i class="fa fa-warning text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Hazardous Material Handling</h6>
+            <p class="text-secondary mb-0">
+              Certified transport of dangerous goods.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="d-flex">
+          <i class="fa fa-snowflake-o text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Reefer Services</h6>
+            <p class="text-secondary mb-0">
+              Temperature-controlled transportation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- //FEATURES SECTION -->
+
+{% endblock %}

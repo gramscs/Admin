@@ -1,0 +1,68 @@
+/* Consistent section styling with vertical rhythm */
+section {
+    padding: var(--section-padding-y) var(--section-padding-x);
+    position: relative;
+    overflow: hidden; /* Prevent margin collapse */
+}
+
+section + section {
+    margin-top: var(--space-md); /* Consistent spacing between sections */
+}
+
+/* Heading styles with better vertical rhythm */
+.section-title {
+    position: relative;
+    margin-bottom: var(--space-lg);
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: -0.01em; /* Slight tightening for larger headings */
+}
+
+.section-title-left {
+    text-align: left;
+    border-left: 5px solid var(--primary-color);
+    padding-left: var(--space-sm);
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.section-title-left:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 40px;
+    height: 3px;
+    background-color: var(--primary-color);
+    opacity: 0.6;
+}
+
+.section-title-center {
+    text-align: center;
+    position: relative;
+}
+
+.section-title-center:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0.7rem auto 0;
+}
+
+/* Fix Bootstrap 4 row issues with consistent gutters */
+.row-grid {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-grid > [class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    display: flex;
+}

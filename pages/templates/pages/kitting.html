@@ -1,0 +1,229 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/kitting/kitting.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<main>
+        <!-- HERO SECTION -->
+        <section class="transportation-hero-section">
+            <div class="container">
+                <div class="transportation-hero-content text-center">
+                    <h1 class="transportation-hero-title">Professional Kitting Services</h1>
+                    <p class="transportation-hero-subtitle">
+                        Why ship components separately when you can deliver ready-to-sell kits? Our kitting services help brands, 
+                        manufacturers and e-commerce companies save costs and improve customer experience with comprehensive 
+                        assembly and packaging solutions tailored to your business needs.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fa fa-cube"></i>
+                            <span>Custom Assembly</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-check-circle"></i>
+                            <span>Quality Control</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-clock-o"></i>
+                            <span>Fast Turnaround</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-money"></i>
+                            <span>Cost Effective</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //HERO SECTION -->
+
+        <!-- OVERVIEW SECTION -->
+        <section class="overview-section" id="overview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Comprehensive Kitting Solutions</h2>
+                    <p class="text-muted">Transform individual components into ready-to-sell packages</p>
+                </div>
+                
+                <div class="overview-content">
+                    <p class="overview-text">
+                        Our professional kitting services streamline your supply chain by assembling multiple components 
+                        into ready-to-ship packages. From promotional campaigns to subscription boxes, we provide comprehensive 
+                        kitting solutions that reduce costs, improve efficiency, and enhance customer experience with 
+                        quality-controlled assembly processes.
+                    </p>
+                    
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-cogs me-2"></i>
+                            Advanced Kitting Operations
+                        </h4>
+                        <p class="mb-0">
+                            Our state-of-the-art kitting facility features automated assembly lines, quality control stations, 
+                            custom packaging solutions, inventory management systems, and real-time tracking capabilities 
+                            for seamless integration with your existing supply chain operations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Kitting Services</h2>
+                    <p class="text-muted">Professional assembly solutions for diverse business needs</p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-gift"></i>
+                        </div>
+                        <h3>Promotional Kitting</h3>
+                        <p>
+                            Festival offers, combo packs, and trial kits assembled as per campaign needs 
+                            with custom branding and packaging for maximum marketing impact.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-box"></i>
+                        </div>
+                        <h3>Subscription Box Assembly</h3>
+                        <p>
+                            Monthly curated boxes packed and shipped directly to customers with personalized 
+                            packaging and quality control for consistent brand experience.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-shopping-bag"></i>
+                        </div>
+                        <h3>Retail-Ready Kitting</h3>
+                        <p>
+                            Products packed with price tags, leaflets, and security tags already attached 
+                            for immediate shelf placement and retail distribution.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-industry"></i>
+                        </div>
+                        <h3>OEM Component Kitting</h3>
+                        <p>
+                            Industrial parts bundled as per production line requirements with precise 
+                            specifications and quality documentation for manufacturing processes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES SECTION -->
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Why Choose Our Kitting Services</h2>
+                    <p class="text-muted">Advanced capabilities that deliver superior results</p>
+                </div>
+                
+                <div class="feature-list">
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Cost Savings</h4>
+                            <p>Save 30-40% on fulfillment costs compared to self-kitting operations</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-cubes"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Inventory Optimization</h4>
+                            <p>No need to maintain separate inventory for combo offers and promotional campaigns</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Faster Processing</h4>
+                            <p>Accelerated order processing during peak sale seasons and high-volume periods</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-check-square"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Quality Assurance</h4>
+                            <p>Each kit undergoes 3-point verification before dispatch ensuring consistent quality</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-paint-brush"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Custom Packaging</h4>
+                            <p>Tailored packaging options available to match your brand requirements and specifications</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Scalable Operations</h4>
+                            <p>Flexible capacity to handle varying volumes from small batches to large-scale productions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Secure Handling</h4>
+                            <p>Protected storage and handling of components with full traceability and accountability</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-mobile"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Real-time Tracking</h4>
+                            <p>Live updates on kit assembly progress and shipment status through our portal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //FEATURES SECTION -->
+
+        
+        
+    </main>
+{% endblock %}

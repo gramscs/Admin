@@ -1,0 +1,21 @@
+{% if hero_title is not defined %}{% set hero_title = '' %}{% endif %}
+{% if hero_subtitle is not defined %}{% set hero_subtitle = '' %}{% endif %}
+{% if hero_features_html is not defined %}{% set hero_features_html = '' %}{% endif %}
+
+<section class="about-hero-section full-vh bg-section-1 full-bleed">
+  <div class="container-fluid px-0">
+    <div class="container text-center">
+      <div class="about-hero-content">
+        {% if hero_title %}
+        <h1 class="about-hero-title reveal reveal-up">{{ hero_title }}</h1>
+        {% endif %}
+        {% if hero_subtitle %}
+        <p class="about-hero-subtitle reveal reveal-up delay-1">{{ hero_subtitle }}</p>
+        {% endif %}
+        {% if hero_features_html %}
+        {{ hero_features_html | safe }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

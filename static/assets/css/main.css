@@ -1,0 +1,19 @@
+/* Main CSS File 
+   This file imports all other CSS files in the proper order
+*/
+
+/* Import Theme Variables */
+@import url('../themes/variables.css');
+
+/* Import Layout */
+@import url('../layout/sections.css');
+
+/* Import Utilities */
+@import url('../utilities/utilities.css');
+
+/* Import Components */
+@import url('../components/cards.css');
+@import url('../components/gallery.css');
+@import url('../components/footer/footer.css');
+
+/* Other component imports can be added here */

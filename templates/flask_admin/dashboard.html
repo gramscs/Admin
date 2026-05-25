@@ -1,0 +1,33 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+<div class="container-fluid">
+  <h2>Gram SCS Admin</h2>
+  <p class="lead">Welcome back!</p>
+  <div class="row" style="margin-top: 20px;">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h4>Consignment Sheet</h4>
+          <p class="lead">{{ stats.consignments }}</p>
+          <a class="btn btn-primary" href="{{ stats.consignments_url }}">Consignment Sheet</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h4>Leads Panel</h4>
+          <p class="lead">{{ stats.leads }}</p>
+          <a class="btn btn-primary" href="{{ stats.leads_url }}">Leads Panel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 20px;">
+    <div class="col-md-12">
+      <a class="btn btn-secondary" href="{{ stats.backup_url }}">Database Backup</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

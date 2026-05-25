@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internal Consignment Sheet</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+</head>
+<body class="bg-light">
+  <div class="container-fluid py-4 px-4">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+      <h3 class="mb-0">Internal Consignment Sheet</h3>
+      <div class="d-flex flex-wrap gap-2">
+        <a href="{{ url_for('admin.leads_panel') }}" class="btn btn-outline-primary">View Leads</a>
+        <a href="{{ url_for('admin.consignments_import_template_excel') }}" class="btn btn-outline-secondary">Download Import Template</a>
+        <form action="{{ url_for('admin.consignments_import_excel') }}" method="POST" enctype="multipart/form-data" class="d-flex gap-2">
+          <input name="file" type="file" accept=".xlsx" class="form-control form-control-sm" required />
+          <button type="submit" class="btn btn-outline-secondary">Import Excel</button>
+        </form>
+        <a href="{{ url_for('admin.consignments_export_excel') }}" class="btn btn-outline-dark">Export Excel</a>
+        <a href="{{ url_for('admin.consignments_export_pdf') }}" class="btn btn-outline-dark">Export PDF</a>
+        <button id="add-row-btn" type="button" class="btn btn-outline-primary">Add Row</button>
+        <button id="save-btn" type="button" class="btn btn-success">Save All</button>
+      </div>
+    </div>
+
+    {% if error %}
+    <div class="alert alert-danger" role="alert">{{ error }}</div>
+    {% endif %}
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }}" role="alert">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <div id="status-msg" class="alert d-none" role="alert"></div>
+
+    <div class="table-responsive bg-white border rounded">
+      <table class="table table-sm table-bordered align-middle mb-0" id="sheet-table">
+        <thead class="table-light">
+          <tr>
+            <th style="min-width: 160px;">Consignment #</th>
+            <th style="min-width: 170px;">Status</th>
+            <th style="min-width: 170px;">Pickup Pincode</th>
+            <th style="min-width: 220px;">Pickup Address</th>
+            <th style="min-width: 170px;">Drop Pincode</th>
+            <th style="min-width: 220px;">Drop Address</th>
+            <th style="width: 85px;">Action</th>
+          </tr>
+        </thead>
+        <tbody
+          id="sheet-body"
+          data-existing-rows="{{ consignments | tojson | forceescape }}"
+          data-save-url="{{ url_for('admin.consignments_save') }}"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/consignments.js') }}"></script>
+</body>
+</html>

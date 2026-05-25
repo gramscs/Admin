@@ -1,0 +1,142 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/ocean-freight/ocean-freight.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+{% set hero_title = 'Ocean Freight Solutions' %}
+{% set hero_subtitle = 'Comprehensive ocean freight forwarding services including FCL and LCL shipments, door-to-door logistics, advanced tracking technology, and complete documentation handling for seamless global trade.' %}
+{% set hero_features_html %}
+  <div class="d-flex justify-content-center flex-wrap gap-4 mt-4">
+    <div><i class="fa fa-ship me-2 text-primary-color"></i>Global Shipping</div>
+    <div><i class="fa fa-cube me-2 text-primary-color"></i>FCL & LCL</div>
+    <div><i class="fa fa-map-marker me-2 text-primary-color"></i>Door-to-Door</div>
+    <div><i class="fa fa-search me-2 text-primary-color"></i>Advanced Tracking</div>
+  </div>
+{% endset %}
+{% include 'partials/about-hero.html' %}
+
+
+<!-- OVERVIEW -->
+<section class="py-5 bg-section-2 full-bleed">
+  <div class="container text-center mb-5">
+    <h2 class="section-title reveal">International Shipping Expertise</h2>
+    <p class="text-muted">
+      Experienced professionals guiding you through international shipping complexities.
+    </p>
+  </div>
+
+  <div class="container">
+    <p class="text-secondary">
+      Our associates provide tailored full container load (FCL) and less than container
+      load (LCL) solutions designed to optimize costs and transit timelines.
+      We manage tracking, purchase orders, container space allocation,
+      and documentation for efficient international operations.
+    </p>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="py-5 bg-section-1 full-bleed">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Ocean Freight Services</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-cube text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Full Container Load</h6>
+          <p class="text-secondary mb-0">
+            Dedicated container services for large volume shipments.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-cubes text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Less than Container Load</h6>
+          <p class="text-secondary mb-0">
+            Cost-effective shared container solutions.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-home text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Door-to-Door</h6>
+          <p class="text-secondary mb-0">
+            Complete origin-to-destination logistics support.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-file-text text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Documentation</h6>
+          <p class="text-secondary mb-0">
+            Customs paperwork and compliance management.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="py-5 bg-section-2 full-bleed">
+  <div class="container text-center mb-5">
+    <h2 class="section-title">Advanced Ocean Freight Features</h2>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex">
+          <i class="fa fa-search text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Shipment Tracking</h6>
+            <p class="text-secondary mb-0">Real-time cargo visibility and milestone updates.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex">
+          <i class="fa fa-shopping-cart text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">PO Management</h6>
+            <p class="text-secondary mb-0">Integrated purchase order consolidation system.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex">
+          <i class="fa fa-shield text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Space Protection</h6>
+            <p class="text-secondary mb-0">Guaranteed container allocation during peak seasons.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,90 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+{% set hero_title = 'Advanced Warehousing Solutions' %}
+{% set hero_subtitle = 'Professional warehousing services with state-of-the-art facilities, climate control, and comprehensive inventory management systems.' %}
+{% set hero_features_html %}
+{% endset %}
+{% include 'partials/about-hero.html' %}
+
+<!-- OVERVIEW (placed in About-style timeline area) -->
+<section class="timeline-section py-5 bg-section-2 full-bleed" id="overview">
+    <div class="container-fluid px-0">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title section-title-center">Comprehensive Warehousing Network</h2>
+                <p class="text-muted">Technology-enabled storage solutions for optimal inventory management</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 rounded shadow-sm bg-section-1 h-100">
+                        <h5 class="fw-bold text-primary-color">Overview</h5>
+                        <h6 class="fw-bold mb-2">Modern Facilities & Technology</h6>
+                        <p class="text-secondary mb-0">Our warehousing division provides comprehensive storage and inventory management services with state-of-the-art facilities and advanced technology. We offer flexible storage solutions for businesses of all sizes, featuring climate-controlled environments, security systems, and real-time inventory tracking.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="p-4 rounded shadow-sm bg-section-1 h-100">
+                        <h5 class="fw-bold text-primary-color">Highlights</h5>
+                        <h6 class="fw-bold mb-2">Smart Warehouse Technology</h6>
+                        <p class="text-secondary mb-0">We deploy cutting-edge warehouse management systems including IoT sensors, automated storage solutions, AI-powered inventory optimization, climate monitoring, 24/7 security surveillance, and seamless integration with transportation networks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES (rendered using About UI values cards) -->
+<section class="values-section py-5 bg-section-1 full-bleed" id="services">
+    <div class="container-fluid px-0">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title section-title-center">Our Warehousing Services</h2>
+                <p class="text-muted">Comprehensive storage solutions tailored to your needs</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 rounded shadow-sm bg-section-2 text-center h-100">
+                        <div class="mb-3"><span class="fa fa-building text-primary-color" style="font-size:28px;"></span></div>
+                        <h5 class="fw-bold">Dedicated Warehousing</h5>
+                        <p class="text-secondary mb-0">Private warehouse facilities exclusively for your business with customized storage solutions, dedicated staff, and tailored operational processes.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 rounded shadow-sm bg-section-2 text-center h-100">
+                        <div class="mb-3"><span class="fa fa-users text-primary-color" style="font-size:28px;"></span></div>
+                        <h5 class="fw-bold">Shared Warehousing</h5>
+                        <p class="text-secondary mb-0">Cost-effective shared storage facilities with flexible space allocation, professional management, and scalable solutions for growing businesses.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 rounded shadow-sm bg-section-2 text-center h-100">
+                        <div class="mb-3"><span class="fa fa-thermometer-half text-primary-color" style="font-size:28px;"></span></div>
+                        <h5 class="fw-bold">Climate-Controlled Storage</h5>
+                        <p class="text-secondary mb-0">Temperature and humidity controlled storage environments for pharmaceuticals, electronics, food products, and other sensitive materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block scripts_extra %}
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+<script src="{{ url_for('static', filename='js/warehousing-page.js') }}"></script>
+
+{% endblock %}

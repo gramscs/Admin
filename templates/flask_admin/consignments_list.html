@@ -1,0 +1,17 @@
+{% extends 'admin/model/list.html' %}
+
+{% block model_menu_bar_after_filters %}
+  {{ super() }}
+  <li>
+    <a href="{{ get_url('.export_xlsx') }}">Export XLSX</a>
+  </li>
+  <li>
+    <a href="{{ get_url('.export_pdf') }}">Export PDF</a>
+  </li>
+  <li>
+    <form method="post" action="{{ get_url('.import_xlsx') }}" enctype="multipart/form-data" style="display:inline-flex; gap: 8px; align-items: center; margin-left: 8px;">
+      <input type="file" name="file" accept=".xlsx" required>
+      <button type="submit" class="btn btn-xs btn-primary">Import XLSX</button>
+    </form>
+  </li>
+{% endblock %}

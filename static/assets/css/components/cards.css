@@ -1,0 +1,45 @@
+/* Card with enhanced micro-interactions */
+.card-custom {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    height: 100%;
+    transition: transform var(--transition-medium), 
+                box-shadow var(--transition-medium),
+                border-color var(--transition-medium);
+    will-change: transform, box-shadow; /* Performance optimization */
+    position: relative;
+    z-index: 1;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary-light);
+    z-index: 2;
+}
+
+.card-custom:hover .icon-circle {
+    transform: scale(1.1);
+    background-color: rgba(130, 207, 43, 0.2);
+}
+
+/* Stats cards with enhanced styling */
+.stats-card {
+    transition: all var(--transition-medium);
+    position: relative;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary-light) !important;
+}
+
+.stats-number {
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}

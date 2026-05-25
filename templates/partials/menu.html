@@ -1,0 +1,100 @@
+<nav class="main-menu sticky-top" aria-label="Main Navigation">
+  <div class="container-fluid py-2">
+    <div class="navbar-inner d-flex align-items-center justify-content-between">
+      <!-- Logo -->
+      <a class="navbar-brand" href="{{ url_for('main.index') }}">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Gram SCS Logo" class="img-fluid logo-img">
+      </a>
+
+      <!-- Right side actions container -->
+      <div class="d-flex align-items-center">
+        <!-- Track Shipment Button (visible on medium screens and above) -->
+        <a href="{{ url_for('track.track_page') }}" target="_blank">
+          <i class="fa fa-map-marker me-2"></i> Track Shipment
+        </a>
+
+        <!-- Menu Button (always visible) -->
+        <button id="openMenuModal" class="mobile-menu-toggle" aria-haspopup="dialog" aria-controls="menuModal"
+          aria-expanded="false">
+          <span class="menu-icon"></span>
+          <span class="menu-icon-text">Menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Menu -->
+  <div id="menuModal" class="menu-modal" role="dialog" aria-modal="true" aria-labelledby="menuModalTitle" tabindex="-1">
+    <div class="menu-modal-content">
+      <div class="menu-modal-header">
+        <h2 id="menuModalTitle" class="menu-modal-title">Our Services</h2>
+        <button class="menu-modal-close" aria-label="Close Menu" tabindex="0">
+          <span class="close-icon"></span>
+        </button>
+      </div>
+      <div class="menu-modal-sections">
+        <div class="menu-section">
+          <h3 class="menu-section-title">About</h3>
+          <a href="{{ url_for('main.about') }}" class="menu-link">About Us</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Logistics</h3>
+          <a href="{{ url_for('pages.show_page', page='warehousing') }}" class="menu-link">Warehousing</a>
+          <a href="{{ url_for('pages.show_page', page='transportation') }}" class="menu-link">Transportation</a>
+          <a href="{{ url_for('pages.show_page', page='rail_freight') }}" class="menu-link">Rail Freight</a>
+          <a href="{{ url_for('pages.show_page', page='ocean-freight') }}" class="menu-link">Ocean Freight</a>
+          <a href="{{ url_for('pages.show_page', page='air-freight') }}" class="menu-link">Air Freight</a>
+          <a href="{{ url_for('pages.show_page', page='reverse-logistics') }}" class="menu-link">Reverse Logistics</a>
+          <a href="{{ url_for('pages.show_page', page='inplant-services') }}" class="menu-link">Inplant Services</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">IT & Automation</h3>
+          <a href="{{ url_for('pages.show_page', page='iot-product-solution') }}" class="menu-link">IoT Product
+            Solution</a>
+          <a href="{{ url_for('pages.show_page', page='process-improvement-and-automation') }}"
+            class="menu-link">Process Improvement & Automation</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Freight Forwarding</h3>
+          <a href="{{ url_for('pages.show_page', page='import-services') }}" class="menu-link">Import Services</a>
+          <a href="{{ url_for('pages.show_page', page='export-services') }}" class="menu-link">Export Services</a>
+          <a href="{{ url_for('pages.show_page', page='custom-clearance-activity') }}" class="menu-link">Custom
+            Clearance Activity</a>
+          <a href="{{ url_for('pages.show_page', page='post-shipment-services') }}" class="menu-link">Post Shipment
+            Services</a>
+          <a href="{{ url_for('pages.show_page', page='documentation') }}" class="menu-link">Documentation</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Value Added</h3>
+          <a href="{{ url_for('pages.show_page', page='labelling') }}" class="menu-link">Labelling</a>
+          <a href="{{ url_for('pages.show_page', page='packaging') }}" class="menu-link">Packaging</a>
+          <a href="{{ url_for('pages.show_page', page='kitting') }}" class="menu-link">Kitting</a>
+          <a href="{{ url_for('pages.show_page', page='product-installation') }}" class="menu-link">Product
+            Installation</a>
+          <a href="{{ url_for('pages.show_page', page='management-information-system') }}" class="menu-link">Management
+            Information System</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Project</h3>
+          <a href="{{ url_for('pages.show_page', page='project-logistics') }}" class="menu-link">Project Logistics</a>
+          <a href="{{ url_for('pages.show_page', page='chartering-services') }}" class="menu-link">Chartering
+            Services</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Track Your Shipment</h3>
+          <a href="{{ url_for('track.track_page') }}" target="_blank">
+            Track Your Shipment
+          </a>
+        </div>
+        <div class="menu-section menu-section--admin">
+          <h3 class="menu-section-title">Admin</h3>
+          <a href="{{ url_for('admin.login') }}" class="menu-admin-btn">
+            <i class="fa fa-lock me-2"></i> Admin Portal
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>
+<script src="{{ url_for('static', filename='js/menu.js') }}"></script>

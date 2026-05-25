@@ -1,0 +1,140 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/air-freight/air-freight.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+{% set hero_title = 'Advanced Air Freight Solutions' %}
+{% set hero_subtitle = 'Fast, reliable, and secure air freight services for all cargo types. From express shipping to temperature-controlled and hazardous goods handling, we ensure on-time global delivery with full tracking support.' %}
+{% set hero_features_html %}
+  <div class="d-flex justify-content-center flex-wrap gap-4 mt-4">
+    <div><i class="fa fa-plane me-2 text-primary-color"></i>Global Reach</div>
+    <div><i class="fa fa-clock-o me-2 text-primary-color"></i>Express Delivery</div>
+    <div><i class="fa fa-shield me-2 text-primary-color"></i>Secure Handling</div>
+    <div><i class="fa fa-search me-2 text-primary-color"></i>Advanced Tracking</div>
+  </div>
+{% endset %}
+{% include 'partials/about-hero.html' %}
+
+
+<!-- OVERVIEW -->
+<section class="py-5 bg-section-2 full-bleed">
+  <div class="container text-center mb-5">
+    <h2 class="section-title reveal">Expertise in Air Cargo Operations</h2>
+    <p class="text-muted">Specialized infrastructure and trained associates</p>
+  </div>
+
+  <div class="container">
+    <p class="text-secondary">
+      Our experienced team handles perishable goods, valuable cargo,
+      dangerous goods, odd-sized shipments, and general freight with
+      strict SOP compliance and advanced cargo handling systems.
+      We ensure safe dispatch, real-time tracking, and regulatory compliance
+      throughout the shipment lifecycle.
+    </p>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="py-5 bg-section-1 full-bleed">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Air Freight Services</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-snowflake-o text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Perishable Cargo</h6>
+          <p class="text-secondary mb-0">
+            Temperature-controlled solutions for sensitive goods.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-diamond text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Valuable & DG Cargo</h6>
+          <p class="text-secondary mb-0">
+            Secure handling of high-value and hazardous goods.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-cubes text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Odd Sized Cargo</h6>
+          <p class="text-secondary mb-0">
+            Oversized and heavy shipment solutions.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-file-text text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Documentation</h6>
+          <p class="text-secondary mb-0">
+            Air waybill and customs compliance management.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="py-5 bg-section-2 full-bleed">
+  <div class="container text-center mb-5">
+    <h2 class="section-title">Advanced Air Freight Features</h2>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex">
+          <i class="fa fa-search text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Real-Time Tracking</h6>
+            <p class="text-secondary mb-0">Live milestone updates and visibility.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex">
+          <i class="fa fa-cogs text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Automated Handling</h6>
+            <p class="text-secondary mb-0">Modern cargo handling systems.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex">
+          <i class="fa fa-shield text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Security & Compliance</h6>
+            <p class="text-secondary mb-0">Strict SOP and SLA adherence.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

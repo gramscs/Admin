@@ -1,0 +1,193 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/rail-freight/rail-freight.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<main>
+        <!-- HERO SECTION -->
+        <section class="rail-freight-hero-section">
+            <div class="container">
+                <div class="rail-freight-hero-content text-center">
+                    <h1 class="rail-freight-hero-title">Rail Freight Solutions</h1>
+                    <p class="rail-freight-hero-subtitle">
+                        Professional rail cargo services ensuring safe and efficient transportation of consignments 
+                        across extensive rail networks. Our modern information management systems provide real-time 
+                        tracking and monitoring, delivering your products at optimum time while maintaining best quality.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fa fa-train"></i>
+                            <span>Rail Network</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-shield"></i>
+                            <span>Safe Transport</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-search"></i>
+                            <span>Real-time Tracking</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-clock-o"></i>
+                            <span>Optimum Timing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //HERO SECTION -->
+
+        <!-- OVERVIEW SECTION -->
+        <section class="overview-section" id="overview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Expert Rail Cargo Services</h2>
+                    <p class="text-muted">Leveraging extensive rail networks for efficient freight transportation</p>
+                </div>
+                
+                <div class="overview-content">
+                    <p class="overview-text">
+                        We offer reliable rail cargo services with huge expertise in safely transporting consignments 
+                        from one location to another via rail transportation. Our professionals ensure goods are safely 
+                        delivered to desired locations without damage, taking utmost care from packaging to delivery.
+                    </p>
+                    
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-cogs me-2"></i>
+                            Advanced IT Integration
+                        </h4>
+                        <p class="mb-0">
+                            Our modern information management systems help clients closely monitor cargo movement. 
+                            Services are highly customized to meet specific requirements, utilizing well-known rail 
+                            networks for efficient transportation with complete consignment tracking capabilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Rail Freight Services</h2>
+                    <p class="text-muted">Comprehensive rail transportation solutions for all cargo types</p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-cube"></i>
+                        </div>
+                        <h3>Bulk Cargo Transport</h3>
+                        <p>
+                            Specialized rail services for bulk commodities including raw materials, grains, 
+                            minerals, and industrial goods with efficient loading and unloading systems.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-truck"></i>
+                        </div>
+                        <h3>Container Rail Services</h3>
+                        <p>
+                            Containerized freight solutions providing secure transportation for manufactured 
+                            goods, electronics, and consumer products across long distances.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-snowflake-o"></i>
+                        </div>
+                        <h3>Temperature-Controlled Transport</h3>
+                        <p>
+                            Refrigerated rail cars for perishable goods, pharmaceuticals, and temperature-sensitive 
+                            products maintaining cold chain integrity throughout transit.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-warning"></i>
+                        </div>
+                        <h3>Hazardous Material Handling</h3>
+                        <p>
+                            Certified transportation of dangerous goods and hazardous materials following 
+                            strict safety protocols and regulatory compliance standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES SECTION -->
+
+        <!-- BENEFITS SECTION -->
+        <section class="benefits-section" id="benefits">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Why Choose Rail Freight</h2>
+                    <p class="text-muted">Advantages of rail transportation for your cargo needs</p>
+                </div>
+                
+                <div class="benefit-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa fa-leaf"></i>
+                        </div>
+                        <h4>Eco-Friendly Transportation</h4>
+                        <p>Rail transport produces significantly lower carbon emissions compared to road transport, supporting your sustainability goals.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa fa-dollar"></i>
+                        </div>
+                        <h4>Cost-Effective Solution</h4>
+                        <p>Rail freight offers economical transportation for large volumes over long distances with competitive pricing structures.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <h4>Reliable Scheduling</h4>
+                        <p>Consistent departure and arrival times with minimal weather-related delays ensuring predictable transit schedules.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <h4>Enhanced Security</h4>
+                        <p>Lower theft and damage rates with secure rail yards and controlled access points throughout the transportation route.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa fa-expand"></i>
+                        </div>
+                        <h4>High Capacity</h4>
+                        <p>Ability to transport large volumes of cargo in single shipments, ideal for bulk commodities and heavy goods.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa fa-map"></i>
+                        </div>
+                        <h4>Extensive Network</h4>
+                        <p>Access to comprehensive rail networks connecting major industrial centers, ports, and distribution hubs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //BENEFITS SECTION -->
+    </main>
+{% endblock %}

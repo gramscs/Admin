@@ -1,0 +1,228 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/labelling/labelling.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<main>
+        <!-- HERO SECTION -->
+        <section class="transportation-hero-section">
+            <div class="container">
+                <div class="transportation-hero-content text-center">
+                    <h1 class="transportation-hero-title">Professional Labelling Solutions</h1>
+                    <p class="transportation-hero-subtitle">
+                        Complete labelling services that meet both Indian and international standards. Our comprehensive 
+                        solutions ensure your goods move smoothly without rejections, featuring barcode printing, 
+                        retail compliance labels, and export documentation that adheres to all regulatory requirements.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fa fa-qrcode"></i>
+                            <span>Barcode Solutions</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-check-circle"></i>
+                            <span>Retail Compliance</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-globe"></i>
+                            <span>Export Labels</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-print"></i>
+                            <span>High-Quality Printing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //HERO SECTION -->
+
+        <!-- OVERVIEW SECTION -->
+        <section class="overview-section" id="overview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Comprehensive Labelling Network</h2>
+                    <p class="text-muted">Professional labelling solutions for seamless compliance and operations</p>
+                </div>
+                
+                <div class="overview-content">
+                    <p class="overview-text">
+                        In today's strict retail and compliance environment, proper labelling is no longer optional. 
+                        We provide complete labelling solutions that meet both Indian and international standards, 
+                        ensuring your goods move smoothly without rejections. Our state-of-the-art printing facilities 
+                        and expert team deliver precision labelling for various industries and applications.
+                    </p>
+                    
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-cogs me-2"></i>
+                            Smart Labelling Technology
+                        </h4>
+                        <p class="mb-0">
+                            We deploy cutting-edge labelling systems including high-resolution barcode printing, 
+                            automated label application, quality control scanning, multilingual printing capabilities, 
+                            compliance verification systems, and seamless integration with inventory management 
+                            for end-to-end labelling support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Labelling Services</h2>
+                    <p class="text-muted">Comprehensive labelling solutions tailored to your needs</p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-qrcode"></i>
+                        </div>
+                        <h3>Barcode/QR Code Labelling</h3>
+                        <p>
+                            High-quality barcode and QR code printing as per customer requirements with 
+                            precision scanning capabilities and compliance standards.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <h3>Retail Compliance Labels</h3>
+                        <p>
+                            Ready-to-use labels for Amazon, Flipkart, DMart and other major retailers 
+                            with complete compliance formatting and specifications.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <h3>Export Documentation Labels</h3>
+                        <p>
+                            Shipping marks, hazardous material labels, multilingual labels for 
+                            international shipping and customs requirements.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-tags"></i>
+                        </div>
+                        <h3>White Label Solutions</h3>
+                        <p>
+                            Private labelling for your brand with customized designs, premium finishes, 
+                            and professional branding elements tailored to your specifications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES SECTION -->
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Advanced Labelling Features</h2>
+                    <p class="text-muted">Cutting-edge capabilities that ensure labelling excellence</p>
+                </div>
+                
+                <div class="feature-list">
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-bolt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Last-Minute Label Corrections</h4>
+                            <p>Quick fixes for wrong labels with immediate turnaround and quality assurance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>GST/E-way Bill Compliance</h4>
+                            <p>Complete compliance with GST and e-way bill requirements for seamless operations</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Quality Control Scanning</h4>
+                            <p>Advanced scanning systems to verify label accuracy and readability</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-medkit"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Specialized Industry Labels</h4>
+                            <p>Special solutions for pharma, food, and dangerous goods with regulatory compliance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-language"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Multilingual Printing</h4>
+                            <p>Support for multiple languages and character sets for international markets</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Fast Turnaround Time</h4>
+                            <p>Quick processing and delivery to meet urgent labelling requirements</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-print"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>High-Resolution Printing</h4>
+                            <p>Crystal-clear printing with durable materials for long-lasting labels</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-ban"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Zero Rejection Guarantee</h4>
+                            <p>No more shipment rejections due to labelling errors with our quality assurance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+{% endblock %}

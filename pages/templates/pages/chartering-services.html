@@ -1,0 +1,218 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/chartering-services/chartering-services.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<main>
+        {% set hero_title = 'Professional Chartering Services' %}
+        {% set hero_subtitle = 'Complete charter solutions for all your freight needs. Our extensive experience in chartering air cargo, sea and barge freight enables us to provide the fastest, most reliable and cost-effective transport solutions for your urgent logistics requirements.' %}
+        {% set hero_features_html %}
+            <div class="d-flex justify-content-center flex-wrap gap-4 mt-4 hero-features">
+                <div class="hero-feature">
+                    <i class="fa fa-plane"></i>
+                    <span>Air Cargo Charter</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fa fa-ship"></i>
+                    <span>Sea Freight Charter</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fa fa-anchor"></i>
+                    <span>Barge Services</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fa fa-clock-o"></i>
+                    <span>24/7 Availability</span>
+                </div>
+            </div>
+        {% endset %}
+        {% include 'partials/about-hero.html' %}
+
+        <!-- OVERVIEW SECTION -->
+        <section class="overview-section full-bleed" id="overview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title reveal section-title-center">Comprehensive Charter Network</h2>
+                    <p class="text-muted">Dedicated charter solutions for urgent and specialized freight requirements</p>
+                </div>
+                
+                <div class="overview-content">
+                    <p class="overview-text">
+                        When standard shipping schedules don't meet your urgent requirements, our charter services 
+                        provide the flexibility and speed you need. We arrange dedicated aircraft, vessels, and barges 
+                        to ensure your cargo reaches its destination exactly when you need it to, with complete control 
+                        over routing, timing, and handling requirements.
+                    </p>
+                    
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-rocket me-2"></i>
+                            Dedicated Charter Solutions
+                        </h4>
+                        <p class="mb-0">
+                            Our charter services include full aircraft charter for urgent deliveries, dedicated vessel 
+                            charter for bulk cargo, specialized barge services for oversized equipment, project cargo 
+                            charter solutions, emergency response charter services, and complete end-to-end coordination 
+                            with customs and ground handling.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Charter Services</h2>
+                    <p class="text-muted">Specialized charter solutions for every type of cargo and timeline</p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-plane"></i>
+                        </div>
+                        <h3>Air Cargo Charter</h3>
+                        <p>
+                            Dedicated aircraft charter for time-critical shipments, oversized cargo, 
+                            perishable goods, and emergency deliveries with door-to-door coordination.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-ship"></i>
+                        </div>
+                        <h3>Sea Freight Charter</h3>
+                        <p>
+                            Full vessel charter for bulk cargo, project shipments, break-bulk cargo, 
+                            and specialized maritime transport with complete voyage planning.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-anchor"></i>
+                        </div>
+                        <h3>Barge Services</h3>
+                        <p>
+                            River and coastal barge charter for heavy machinery, construction equipment, 
+                            and bulk materials with specialized loading and unloading capabilities.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-truck"></i>
+                        </div>
+                        <h3>Project Cargo Charter</h3>
+                        <p>
+                            End-to-end charter solutions for project cargo including route surveys, 
+                            permits, specialized equipment, and multimodal transportation coordination.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES SECTION -->
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Charter Service Features</h2>
+                    <p class="text-muted">Comprehensive capabilities that ensure successful charter operations</p>
+                </div>
+                
+                <div class="feature-list">
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>24/7 Availability</h4>
+                            <p>Round-the-clock charter booking and coordination for emergency and urgent shipments</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Global Network</h4>
+                            <p>Worldwide charter services with established partners and agents in major ports and airports</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Specialized Equipment</h4>
+                            <p>Access to specialized aircraft, vessels, and handling equipment for unique cargo requirements</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Full Insurance</h4>
+                            <p>Comprehensive insurance coverage for chartered cargo with liability protection</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-file-text"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Documentation Support</h4>
+                            <p>Complete documentation handling including permits, customs clearance, and certificates</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Real-time Tracking</h4>
+                            <p>Live tracking and monitoring of chartered vehicles with regular status updates</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Expert Team</h4>
+                            <p>Dedicated charter specialists with extensive experience in complex logistics operations</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Emergency Response</h4>
+                            <p>Rapid response charter services for disaster relief, medical emergencies, and urgent situations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+{% endblock %}

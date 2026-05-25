@@ -1,0 +1,207 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/documentation/documentation.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<main>
+        {% set hero_title = 'Professional Documentation Services' %}
+        {% set hero_subtitle = 'Precision in paperwork for seamless global trade. Our comprehensive documentation services ensure compliance, reduce delays, and keep your cargo moving efficiently across international borders with expert handling of all trade-related documentation.' %}
+        {% set hero_features_html %}
+            <div class="d-flex justify-content-center flex-wrap gap-4 mt-4 hero-features">
+                <div class="hero-feature"><i class="fa fa-file-text-o"></i><span>Complete Documentation</span></div>
+                <div class="hero-feature"><i class="fa fa-check-circle"></i><span>99.7% Accuracy</span></div>
+                <div class="hero-feature"><i class="fa fa-clock-o"></i><span>Real-time Tracking</span></div>
+                <div class="hero-feature"><i class="fa fa-globe"></i><span>Global Compliance</span></div>
+            </div>
+        {% endset %}
+        {% include 'partials/about-hero.html' %}
+
+        <!-- OVERVIEW SECTION -->
+        <section class="overview-section" id="overview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title reveal section-title-center">Documentation Excellence Network</h2>
+                    <p class="text-muted">Expert paperwork solutions for seamless international trade operations</p>
+                </div>
+                
+                <div class="overview-content">
+                    <p class="overview-text">
+                        Our documentation division provides comprehensive trade document preparation and management 
+                        services with expert knowledge and advanced systems. We ensure accurate, compliant documentation 
+                        for businesses of all sizes, featuring real-time tracking, regulatory compliance, and 
+                        seamless integration with global trade networks for optimal supply chain efficiency.
+                    </p>
+                    
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-cogs me-2"></i>
+                            Smart Documentation Technology
+                        </h4>
+                        <p class="mb-0">
+                            We deploy cutting-edge document management systems including automated form generation, 
+                            digital archival solutions, API connectivity with client ERPs, real-time compliance monitoring, 
+                            e-signature capabilities, and seamless integration with customs and regulatory networks 
+                            for end-to-end trade support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Documentation Services</h2>
+                    <p class="text-muted">Comprehensive paperwork solutions tailored to your trade needs</p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-file-text-o"></i>
+                        </div>
+                        <h3>Trade Compliance Documents</h3>
+                        <p>
+                            Commercial invoices, packing lists, certificates of origin (FTA/Preferential), 
+                            and GST/E-way bill generation with expert compliance management.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <h3>International Shipment Papers</h3>
+                        <p>
+                            Bill of Lading preparation (OBL, HBL, Seaway), export/import declarations, 
+                            and Letter of Credit documentation support for global trade.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-truck"></i>
+                        </div>
+                        <h3>Transport Documentation</h3>
+                        <p>
+                            CMR consignment notes, dangerous goods declarations (IMO/ADR), 
+                            carrier-specific airway bills, and multi-modal transport documents.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <h3>Customs Clearance Support</h3>
+                        <p>
+                            HS code classification assistance, duty drawback documentation, 
+                            bond/warehouse filing, and customs valuation support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES SECTION -->
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Advanced Documentation Features</h2>
+                    <p class="text-muted">Cutting-edge capabilities that ensure document accuracy</p>
+                </div>
+                
+                <div class="feature-list">
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Error-Free Processing</h4>
+                            <p>99.7% first-time clearance rate with meticulous attention to detail</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Real-Time Document Tracking</h4>
+                            <p>Advanced portal system for live document status and comprehensive reporting</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Regulatory Expertise</h4>
+                            <p>Always updated with latest CBIC/DGFT changes and international requirements</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-window-restore"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Single-Window Service</h4>
+                            <p>Complete documentation from purchase order to delivery receipt</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-plug"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>API Integration</h4>
+                            <p>Seamless connectivity with client ERPs and management systems</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-archive"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Digital Document Archival</h4>
+                            <p>Secure document storage with 7-year retention capability</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>E-Signature Capabilities</h4>
+                            <p>Digital signature support for faster document processing and approval</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-mobile-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Mobile Access</h4>
+                            <p>Real-time access to document status and operations through mobile apps</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+{% endblock %}

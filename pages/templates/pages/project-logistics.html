@@ -1,0 +1,205 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/project-logistics/project-logistics.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<main>
+        {% set hero_title = 'Project Logistics Solutions' %}
+        {% set hero_subtitle = 'Turnkey heavy-lift and project cargo solutions with specialized equipment, engineering expertise, and comprehensive project management. From wind energy components to industrial plant relocations, we deliver complex logistics with precision and safety.' %}
+        {% set hero_features_html %}
+            <div class="d-flex justify-content-center flex-wrap gap-4 mt-4 hero-features">
+                <div class="hero-feature reveal reveal-up delay-2"><i class="fa fa-truck"></i><span>Heavy Transport Fleet</span></div>
+                <div class="hero-feature reveal reveal-up delay-2"><i class="fa fa-cogs"></i><span>Lifting Assets</span></div>
+                <div class="hero-feature reveal reveal-up delay-2"><i class="fa fa-users"></i><span>Expert Engineers</span></div>
+                <div class="hero-feature reveal reveal-up delay-2"><i class="fa fa-shield"></i><span>Safety First</span></div>
+            </div>
+        {% endset %}
+        {% include 'partials/about-hero.html' %}
+
+        <!-- OVERVIEW SECTION -->
+        <section class="overview-section" id="overview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Asset-Backed Logistics Specialist</h2>
+                    <p class="text-muted">Comprehensive project cargo solutions with integrated capabilities</p>
+                </div>
+                
+                <div class="overview-content">
+                    <p class="overview-text">
+                        As an asset-backed logistics specialist, we provide turnkey heavy-lift and project cargo solutions 
+                        through our comprehensive fleet of specialized equipment and expert engineering team. Our integrated 
+                        approach combines heavy transport, lifting assets, technical expertise, and strategic network coverage 
+                        to deliver complex project logistics with unmatched precision and safety standards.
+                    </p>
+                    
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-industry me-2"></i>
+                            Integrated Capabilities
+                        </h4>
+                        <p class="mb-0">
+                            Our comprehensive capabilities include 200+ specialized trailers with up to 500MT capacity, 
+                            750MT crawler cranes with certified operators, 150+ trained riggers and project engineers, 
+                            and 12 strategic hubs across India with bonded warehouses for complete project support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Sector Expertise</h2>
+                    <p class="text-muted">Specialized solutions across diverse industrial sectors</p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-bolt"></i>
+                        </div>
+                        <h3>Energy Logistics</h3>
+                        <p>
+                            Complete WTG component movement for wind projects, thermal boiler drum transportation, 
+                            and solar PV module mega-project experience with specialized handling equipment.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-industry"></i>
+                        </div>
+                        <h3>Industrial Projects</h3>
+                        <p>
+                            Plant relocation management, machinery installation, and turnaround logistics 
+                            with comprehensive project planning and execution capabilities.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-road"></i>
+                        </div>
+                        <h3>Infrastructure Support</h3>
+                        <p>
+                            Metro rail component logistics, bridge construction material handling, 
+                            and tunnel project cargo with specialized transportation solutions.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-ship"></i>
+                        </div>
+                        <h3>ODC Transportation</h3>
+                        <p>
+                            Over-dimensional cargo movement with route surveys, permit management, 
+                            and specialized escort coordination for safe and compliant transport.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES SECTION -->
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Differentiators</h2>
+                    <p class="text-muted">What sets us apart in project logistics execution</p>
+                </div>
+                
+                <div class="feature-list">
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Single-Point Responsibility</h4>
+                            <p>End-to-end contract logistics with unified project management and consolidated billing</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-calculator"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Engineering-Led Approach</h4>
+                            <p>Route feasibility studies, transportability analysis, and CAD simulations for critical loads</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-file-text-o"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Regulatory Compliance</h4>
+                            <p>In-house permit processing team with state-specific escort coordination and customs bonded movement</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-map"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Pre-Mobilization Planning</h4>
+                            <p>Site reconnaissance, method statement development, and comprehensive risk mitigation planning</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Real-time Monitoring</h4>
+                            <p>Live cargo tracking with daily progress reporting and proactive contingency management</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Certified Operations</h4>
+                            <p>Trained riggers and certified crane operators with comprehensive safety protocols</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Strategic Network</h4>
+                            <p>12 strategic hubs across India with bonded warehouses for seamless project coordination</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-handshake-o"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Project Handover</h4>
+                            <p>As-built documentation, lessons learned analysis, and professional client handover protocols</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+{% endblock %}

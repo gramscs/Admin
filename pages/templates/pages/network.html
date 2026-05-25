@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-section-1 text-center">
+  <div class="container">
+    <h1 class="display-5 fw-bold mb-3">Our Network</h1>
+    <p class="text-secondary mx-auto" style="max-width:800px;">
+      GRAM SCS operates a robust warehousing and transportation network across India and select international locations. For partnership enquiries, please <a href="{{ url_for('main.contact') }}">contact us</a>.
+    </p>
+  </div>
+</section>
+{% endblock %}

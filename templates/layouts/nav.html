@@ -1,0 +1,69 @@
+<nav class="navbar navbar-light bg-white sticky-top border-bottom">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="/">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" height="40">
+    </a>
+
+    <div class="d-flex">
+      <a href="{{ url_for('track.track_page') }}" target="_blank">
+        Track Shipment
+      </a>
+
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menuModal">
+        Menu
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="menuModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Our Services</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <h6>About</h6>
+            <a href="/about" class="d-block">About Us</a>
+          </div>
+
+          <div class="col-md-6">
+            <h6>Logistics</h6>
+            <a href="/warehousing" class="d-block">Warehousing</a>
+            <a href="/transportation" class="d-block">Transportation</a>
+            <a href="/rail_freight" class="d-block">Rail Freight</a>
+            <a href="/ocean-freight" class="d-block">Ocean Freight</a>
+            <a href="/air-freight" class="d-block">Air Freight</a>
+            <a href="/reverse-logistics" class="d-block">Reverse Logistics</a>
+            <a href="/inplant-services" class="d-block">Inplant Services</a>
+
+          </div>
+
+          <div class="col-md-6">
+            <h6>Freight Forwarding</h6>
+            <a href="/import-services" class="d-block">Import Services</a>
+            <a href="/export-services" class="d-block">Export Services</a>
+          </div>
+
+          <div class="col-md-6">
+            <h6>Track</h6>
+            <a href="{{ url_for('track.track_page') }}" target="_blank">
+              Track Your Shipment
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

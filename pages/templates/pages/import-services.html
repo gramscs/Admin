@@ -1,0 +1,173 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/import-services/import-services.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+{% set hero_title = 'Professional Import Services' %}
+{% set hero_subtitle = 'Comprehensive customs clearance and import management solutions ensuring regulatory compliance, fast processing, and seamless international trade operations.' %}
+{% set hero_features_html %}
+  <div class="d-flex justify-content-center flex-wrap gap-4 mt-4">
+    <div><i class="fa fa-check-circle me-2 text-primary-color"></i>Regulatory Compliance</div>
+    <div><i class="fa fa-clock-o me-2 text-primary-color"></i>Fast Processing</div>
+    <div><i class="fa fa-shield me-2 text-primary-color"></i>Risk Management</div>
+    <div><i class="fa fa-file-text me-2 text-primary-color"></i>Complete Documentation</div>
+  </div>
+{% endset %}
+{% include 'partials/about-hero.html' %}
+
+
+<!-- OVERVIEW -->
+<section class="py-5 bg-section-2 text-center full-bleed">
+  <div class="container">
+    <h2 class="section-title reveal section-title-center mb-4">
+      Streamlined Import Operations
+    </h2>
+
+    <p class="text-secondary mx-auto" style="max-width: 850px;">
+      Our experienced team handles customs clearance, documentation,
+      compliance verification, duty calculations, and coordination with
+      government authorities for smooth import operations.
+    </p>
+
+    <div class="mt-4 p-4 rounded shadow-sm bg-section-1">
+      <h5 class="fw-bold text-primary-color mb-2">
+        <i class="fa fa-globe me-2"></i>Comprehensive Import Solutions
+      </h5>
+      <p class="mb-0 text-secondary">
+        Complete end-to-end import services across major ports and
+        entry points with real-time tracking and documentation support.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="py-5 bg-section-1 full-bleed">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title section-title-center">
+        Our Import Services
+      </h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-home text-primary-color mb-3" style="font-size: 28px;"></i>
+          <h6 class="fw-bold">Home Consumption</h6>
+          <p class="text-secondary mb-0">
+            Routine shipment clearance with complete duty-paid procedures.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-exchange text-primary-color mb-3" style="font-size: 28px;"></i>
+          <h6 class="fw-bold">In-Bond / Ex-Bond</h6>
+          <p class="text-secondary mb-0">
+            Specialized handling with proper warehouse coordination.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-certificate text-primary-color mb-3" style="font-size: 28px;"></i>
+          <h6 class="fw-bold">License Shipments</h6>
+          <p class="text-secondary mb-0">
+            DEPB, EPCG, advance license documentation management.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-building text-primary-color mb-3" style="font-size: 28px;"></i>
+          <h6 class="fw-bold">Special Zones (EOU, SEZ)</h6>
+          <p class="text-secondary mb-0">
+            Compliance support for 100% EOU, STPI & SEZ shipments.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-cogs text-primary-color mb-3" style="font-size: 28px;"></i>
+          <h6 class="fw-bold">Project Imports</h6>
+          <p class="text-secondary mb-0">
+            Capital goods and large project clearance expertise.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-truck text-primary-color mb-3" style="font-size: 28px;"></i>
+          <h6 class="fw-bold">Direct Delivery</h6>
+          <p class="text-secondary mb-0">
+            Fast-track clearance for perishable & urgent cargo.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="py-5 bg-section-2 full-bleed">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title section-title-center">
+        Advanced Import Features
+      </h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="p-4 bg-section-1 rounded shadow-sm text-center h-100">
+          <i class="fa fa-refresh text-primary-color mb-2"></i>
+          <p class="mb-0">Re-import Services</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-4 bg-section-1 rounded shadow-sm text-center h-100">
+          <i class="fa fa-globe text-primary-color mb-2"></i>
+          <p class="mb-0">Third Country Export</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-4 bg-section-1 rounded shadow-sm text-center h-100">
+          <i class="fa fa-ship text-primary-color mb-2"></i>
+          <p class="mb-0">High Seas Sale</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-4 bg-section-1 rounded shadow-sm text-center h-100">
+          <i class="fa fa-id-card text-primary-color mb-2"></i>
+          <p class="mb-0">ATA Carnet</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

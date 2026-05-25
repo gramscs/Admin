@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Gram SCS, about us, logistics, supply chain, warehousing, transportation" />
+    <meta property="og:title" content="About Us - GRAM SCS">
+    <meta property="og:description" content="Learn about GRAM SCS - Leading supply chain solutions provider in India with advanced technology integration">
+    <meta name="theme-color" content="#82CF2B">
+    <title>About Us - Gram SCS</title>
+
+    <!-- Preload and stylesheets -->
+    <link rel="preload" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" as="style">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/logo.png') }}">
+</head>
+
+<body>
+    <header id="home">
+        {% include 'partials/header.html' %}
+    </header>
+    <nav class="main-navigation">
+        {% include 'partials/menu.html' %}
+    </nav>
+    <main>
+        <!-- HERO SECTION -->
+        <section class="about-hero-section">
+            <div class="container">
+                <div class="about-hero-content text-center">
+                    <h1 class="about-hero-title">About GRAM SCS</h1>
+                    <p class="about-hero-subtitle">Leading the future of supply chain solutions with technology-driven innovation and customer-focused excellence.</p>
+                </div>
+            </div>
+        </section>
+        <!-- //HERO SECTION -->
+
+        <!-- TIMELINE SECTION -->
+        <section class="timeline-section" id="timeline">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Journey</h2>
+                    <p class="text-muted">Discover how we've evolved to become a trusted partner in logistics solutions</p>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <span class="timeline-year">2017</span>
+                        <h3 class="timeline-title">How We Incepted</h3>
+                        <p class="timeline-content">
+                            GRAM Supply Chain Solutions started with an idea of providing automated & technology driven Logistics Services in the Indian Supply Chain Market with less human intervention & more technology based solutions.
+                            </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-year">2019</span>
+                        <h3 class="timeline-title">Scaling New Heights</h3>
+                        <p class="timeline-content">
+                            GRAM expanded its business portfolio with over 15 international clients serving them at all India locations. Our growth trajectory accelerated as we embraced new technologies and expanded our service offerings.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-year">Present</span>
+                        <h3 class="timeline-title">Leading Innovation</h3>
+                        <p class="timeline-content">
+                            Today, we continue to pioneer cutting-edge logistics solutions, serving clients across diverse industries with our comprehensive suite of supply chain services and advanced technology platforms.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //TIMELINE SECTION -->
+
+        <!-- VISION & MISSION SECTION -->
+        <section class="values-section" id="values">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Vision & Values</h2>
+                    <p class="text-muted">The principles that drive our commitment to excellence</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <h3 class="value-title">Our Vision</h3>
+                            <p class="value-description">
+                                To emerge as a leading Technology Driven Service Partner & Solution Provider in Indian Logistics Segment.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fa fa-bullseye"></i>
+                            </div>
+                            <h3 class="value-title">Our Mission</h3>
+                            <p class="value-description">
+                                To provide innovative, technology-driven logistics solutions that enhance efficiency, reduce costs, and create sustainable value for our clients.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fa fa-cogs"></i>
+                            </div>
+                            <h3 class="value-title">Our Approach</h3>
+                            <p class="value-description">
+                                Leveraging advanced IoT technology, automation, and data analytics to deliver intelligent supply chain solutions with minimal human intervention.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //VISION & MISSION SECTION -->
+
+        
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="site-footer py-5 bg-dark text-white">
+        <div class="container">
+            <!-- Main Footer Content -->
+            {% include 'partials/footer.html' %}
+            
+            <!-- Footer Divider -->
+            <hr class="footer-divider my-4 bg-light opacity-25">
+            
+            <!-- Bottom Footer -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <a href="#home" class="move-top btn btn-outline-light rounded-circle" aria-label="Back to top">
+                    <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Copyright Section -->
+    <div class="copyright-section py-3 bg-black text-white">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 GRAM SCS. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/animations.js') }}"></script>
+
+    <div id="toast-container" style="position: fixed; top: 20px; right: 20px; z-index: 1060;"></div>
+    <script src="{{ url_for('static', filename='js/about-page.js') }}"></script>
+</body>
+
+</html>

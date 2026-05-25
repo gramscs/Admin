@@ -1,0 +1,144 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/inplant-services/inplant-services.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+{% set hero_title = 'Inplant Services' %}
+{% set hero_subtitle = 'Comprehensive inplant services for factories and manufacturing units including packing, manpower, IT visibility systems, storage, and transportation scheduling.' %}
+{% set hero_features_html %}
+  <div class="d-flex justify-content-center flex-wrap gap-4 mt-4">
+    <div><i class="fa fa-cogs me-2 text-primary-color"></i>Process Integration</div>
+    <div><i class="fa fa-users me-2 text-primary-color"></i>Manpower Facility</div>
+    <div><i class="fa fa-cube me-2 text-primary-color"></i>Packing & Shipping</div>
+    <div><i class="fa fa-shield me-2 text-primary-color"></i>Safety & Compliance</div>
+  </div>
+{% endset %}
+{% include 'partials/about-hero.html' %}
+
+
+<!-- OVERVIEW -->
+<section class="py-5 bg-section-2 full-bleed">
+  <div class="container text-center mb-5">
+    <h2 class="section-title reveal">Integrated Inplant Operations</h2>
+    <p class="text-muted">Holistic solutions for seamless plant logistics</p>
+  </div>
+
+  <div class="container">
+    <p class="text-secondary">
+      Our inplant services reduce costs, improve productivity, and optimize plant
+      logistics by integrating inbound, in-plant, and outbound processes with
+      technology-driven systems and strict safety protocols.
+    </p>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="py-5 bg-section-1">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Inplant Services</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm h-100 text-center">
+          <i class="fa fa-cube text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Packing & Sample Shipping</h6>
+          <p class="text-secondary mb-0">Safe and efficient packing and dispatch support.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm h-100 text-center">
+          <i class="fa fa-users text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Manpower Facility</h6>
+          <p class="text-secondary mb-0">Skilled workforce for plant logistics operations.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm h-100 text-center">
+          <i class="fa fa-desktop text-primary-color mb-3"></i>
+          <h6 class="fw-bold">IT & Visibility Systems</h6>
+          <p class="text-secondary mb-0">Real-time tracking and reporting automation.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm h-100 text-center">
+          <i class="fa fa-archive text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Storage & Distribution</h6>
+          <p class="text-secondary mb-0">Efficient internal storage and handling systems.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm h-100 text-center">
+          <i class="fa fa-truck text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Transportation Scheduling</h6>
+          <p class="text-secondary mb-0">Optimized inbound and outbound dispatch planning.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-section-2 rounded shadow-sm h-100 text-center">
+          <i class="fa fa-leaf text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Facility Management</h6>
+          <p class="text-secondary mb-0">Horticulture, housekeeping, and plant support services.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="py-5 bg-section-2">
+  <div class="container text-center mb-5">
+    <h2 class="section-title">Key Capabilities</h2>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="text-center">
+          <i class="fa fa-cogs text-primary-color mb-2"></i>
+          <h6 class="fw-bold">Process Integration</h6>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="text-center">
+          <i class="fa fa-shield text-primary-color mb-2"></i>
+          <h6 class="fw-bold">Safety Compliance</h6>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="text-center">
+          <i class="fa fa-line-chart text-primary-color mb-2"></i>
+          <h6 class="fw-bold">Productivity Analytics</h6>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="text-center">
+          <i class="fa fa-users text-primary-color mb-2"></i>
+          <h6 class="fw-bold">Skilled Workforce</h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

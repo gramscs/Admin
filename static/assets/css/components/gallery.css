@@ -1,0 +1,46 @@
+/* Gallery improvements */
+.gallery-img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-link:hover .gallery-img {
+    transform: scale(1.03);
+}
+
+/* Improved popup styling */
+.pop-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}        
+
+.popup {
+    background: #fff;
+    border-radius: var(--border-radius);
+    max-width: 800px;
+    width: 90%;
+    margin: 2em auto;
+    padding: 2em;
+    position: relative;
+}
+
+.popup img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.popup .close {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 1.5em;
+    color: var(--dark-bg);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.popup .close:hover {
+    color: var(--primary-color);
+}

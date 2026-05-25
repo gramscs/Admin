@@ -1,0 +1,130 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/about/about-us.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/reverse-logistics/reverse-logistics.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+{% set hero_title = 'Reverse Logistics Solutions' %}
+{% set hero_subtitle = 'Transform returns into opportunities with structured reverse supply chain solutions. From returns processing to recycling and value recovery, we help you maximize asset value.' %}
+{% set hero_features_html %}
+  <div class="d-flex justify-content-center flex-wrap gap-4 mt-4">
+    <div><i class="fa fa-refresh me-2 text-primary-color"></i>Returns Management</div>
+    <div><i class="fa fa-recycle me-2 text-primary-color"></i>Recycling</div>
+    <div><i class="fa fa-line-chart me-2 text-primary-color"></i>Value Recovery</div>
+    <div><i class="fa fa-check-circle me-2 text-primary-color"></i>Quality Control</div>
+  </div>
+{% endset %}
+{% include 'partials/about-hero.html' %}
+
+
+<!-- OVERVIEW -->
+<section class="py-5 bg-section-2 full-bleed">
+  <div class="container text-center mb-5">
+    <h2 class="section-title reveal">Efficient Returns Management</h2>
+    <p class="text-muted">Turn reverse flow into competitive advantage</p>
+  </div>
+
+  <div class="container">
+    <p class="text-secondary">
+      We design and implement reverse supply chain strategies that support profit goals
+      and maximize asset recovery. Our services cover inspection, sorting, refurbishment,
+      recycling, and safe disposal processes.
+    </p>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="py-5 bg-section-1">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Reverse Logistics Services</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-exchange text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Returns Processing</h6>
+          <p class="text-secondary mb-0">Inspection, sorting, and structured return workflows.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-recycle text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Recycling Management</h6>
+          <p class="text-secondary mb-0">Sustainable and compliant disposal solutions.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-cog text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Refurbishment</h6>
+          <p class="text-secondary mb-0">Product restoration to extend lifecycle value.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 bg-section-2 rounded shadow-sm text-center h-100">
+          <i class="fa fa-archive text-primary-color mb-3"></i>
+          <h6 class="fw-bold">Asset Recovery</h6>
+          <p class="text-secondary mb-0">Resale, repurposing, and salvage optimization.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="py-5 bg-section-2">
+  <div class="container text-center mb-5">
+    <h2 class="section-title">Why Choose Our Services</h2>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex">
+          <i class="fa fa-check-circle text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Quality Assurance</h6>
+            <p class="text-secondary mb-0">Strict inspection and recovery standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex">
+          <i class="fa fa-line-chart text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Value Optimization</h6>
+            <p class="text-secondary mb-0">Maximized recovery returns.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex">
+          <i class="fa fa-leaf text-primary-color me-3 mt-1"></i>
+          <div>
+            <h6 class="fw-bold">Sustainable Solutions</h6>
+            <p class="text-secondary mb-0">Environmentally responsible operations.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

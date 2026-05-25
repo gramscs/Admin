@@ -1,0 +1,227 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/management-information-system/management-information-system.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<main>
+        <!-- HERO SECTION -->
+        <section class="transportation-hero-section">
+            <div class="container">
+                <div class="transportation-hero-content text-center">
+                    <h1 class="transportation-hero-title">Management Information System</h1>
+                    <p class="transportation-hero-subtitle">
+                        Advanced digital platform providing comprehensive visibility and control over your entire logistics 
+                        operation. Real-time tracking, vendor management, analytics, and seamless integration with ERP systems 
+                        to optimize your supply chain performance with data-driven insights.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fa fa-dashboard"></i>
+                            <span>Real-time Dashboard</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-users"></i>
+                            <span>Vendor Management</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-map-marker"></i>
+                            <span>Live Tracking</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-bar-chart"></i>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //HERO SECTION -->
+
+        <!-- OVERVIEW SECTION -->
+        <section class="overview-section" id="overview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Intelligent Operations Management</h2>
+                    <p class="text-muted">Digitizing logistics operations for maximum efficiency and transparency</p>
+                </div>
+                
+                <div class="overview-content">
+                    <p class="overview-text">
+                        Our comprehensive Management Information System revolutionizes how you manage logistics operations. 
+                        From vendor relationships and payment processing to real-time tracking and performance analytics, 
+                        our platform provides complete visibility and control over every aspect of your supply chain, 
+                        enabling data-driven decisions and operational excellence.
+                    </p>
+                    
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-cogs me-2"></i>
+                            Integrated Digital Platform
+                        </h4>
+                        <p class="mb-0">
+                            Our MIS integrates seamlessly with existing systems, providing unified dashboards, 
+                            automated workflows, real-time notifications, advanced reporting capabilities, 
+                            mobile accessibility, and robust security features for comprehensive operational 
+                            management and strategic planning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Core MIS Modules</h2>
+                    <p class="text-muted">Comprehensive modules for complete operational control</p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h3>Vendor Management System</h3>
+                        <p>
+                            Complete vendor lifecycle management with registration, performance tracking, 
+                            contract management, and automated evaluation systems for optimal partnerships.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-credit-card"></i>
+                        </div>
+                        <h3>Bidding & Payment Gateway</h3>
+                        <p>
+                            Automated bidding interface with secure payment processing, invoice management, 
+                            and transparent financial workflows for streamlined vendor transactions.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-link"></i>
+                        </div>
+                        <h3>ERP Integration</h3>
+                        <p>
+                            Seamless integration with existing ERP systems for unified data flow, 
+                            automated synchronization, and comprehensive business process alignment.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <h3>Real-time Tracking & Geofencing</h3>
+                        <p>
+                            Advanced GPS tracking with geofencing capabilities, route optimization, 
+                            and instant alerts for complete shipment visibility and security.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES SECTION -->
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Advanced System Features</h2>
+                    <p class="text-muted">Cutting-edge capabilities for operational excellence</p>
+                </div>
+                
+                <div class="feature-list">
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-file-text-o"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Document Management</h4>
+                            <p>Digital management of P&L statements, invoices, contracts, and compliance documents</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-truck"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Vehicle Placement Status</h4>
+                            <p>Real-time fleet management with vehicle availability, assignment, and utilization tracking</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Real-time Delivery Updates</h4>
+                            <p>Instant notifications and updates on delivery status with automated customer communication</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-bar-chart"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Advanced Analytics</h4>
+                            <p>Comprehensive reporting and analytics for performance insights and strategic decision-making</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-mobile"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Mobile Accessibility</h4>
+                            <p>Full-featured mobile application for on-the-go access and field operations management</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Security & Compliance</h4>
+                            <p>Enterprise-grade security with role-based access and compliance with industry standards</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>24/7 System Monitoring</h4>
+                            <p>Continuous system monitoring with proactive alerts and automated backup procedures</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-database"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Data Integration Hub</h4>
+                            <p>Centralized data management with automated integration from multiple source systems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+{% endblock %}

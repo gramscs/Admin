@@ -1,0 +1,229 @@
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css_slider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/home/index-custom.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/pages/product-installation/product-installation.css') }}">
+{% endblock %}
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<main>
+        <!-- HERO SECTION -->
+        <section class="transportation-hero-section">
+            <div class="container">
+                <div class="transportation-hero-content text-center">
+                    <h1 class="transportation-hero-title">Professional Product Installation</h1>
+                    <p class="transportation-hero-subtitle">
+                        With a competitive market and busy consumers, home delivery is the call of the day. We deliver, unload, 
+                        unpack and install whenever asked. Our skilled technicians ensure your products are professionally 
+                        installed with care and precision, from appliances to furniture and everything in between.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fa fa-truck"></i>
+                            <span>Complete Delivery</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-wrench"></i>
+                            <span>Expert Installation</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-shield"></i>
+                            <span>Damage Free</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-clock-o"></i>
+                            <span>Timely Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //HERO SECTION -->
+
+        <!-- OVERVIEW SECTION -->
+        <section class="overview-section" id="overview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Complete Installation Solutions</h2>
+                    <p class="text-muted">From delivery to installation, we handle it all with professional care</p>
+                </div>
+                
+                <div class="overview-content">
+                    <p class="overview-text">
+                        We use our strategic warehousing locations and our own fleet of GPS tracked trucks to ensure 
+                        seamless delivery with better visibility. At the delivery point, whether a bed has to be 
+                        delivered to the 20th floor or a washing machine to the basement, we get it done. Our staff 
+                        is always respectful of customers and their homes, taking care while handling installations.
+                    </p>
+                    
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-cogs me-2"></i>
+                            Professional Installation Process
+                        </h4>
+                        <p class="mb-0">
+                            Our trained technicians follow strict protocols for product installation including site assessment, 
+                            safe handling procedures, professional assembly techniques, quality testing, and cleanup services 
+                            to ensure your products are properly installed without any damage to your property.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Installation Services</h2>
+                    <p class="text-muted">Comprehensive installation solutions for all your needs</p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <h3>Home Appliances</h3>
+                        <p>
+                            Professional installation of washing machines, refrigerators, air conditioners, 
+                            and other home appliances with proper connections and testing.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-bed"></i>
+                        </div>
+                        <h3>Furniture Assembly</h3>
+                        <p>
+                            Expert assembly and placement of furniture including beds, wardrobes, 
+                            sofas, and dining sets with precision and attention to detail.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-desktop"></i>
+                        </div>
+                        <h3>Electronics Setup</h3>
+                        <p>
+                            Complete installation and setup of televisions, sound systems, computers, 
+                            and smart home devices with proper calibration and testing.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card reveal reveal-up delay-2">
+                        <div class="service-icon">
+                            <i class="fa fa-building"></i>
+                        </div>
+                        <h3>Office Equipment</h3>
+                        <p>
+                            Professional installation of office furniture, equipment, and fixtures 
+                            for commercial spaces with minimal business disruption.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES SECTION -->
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Why Choose Our Installation Services</h2>
+                    <p class="text-muted">Professional standards that protect your investment</p>
+                </div>
+                
+                <div class="feature-list">
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-user-circle"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Respectful Service</h4>
+                            <p>Our staff is always respectful of customers and their homes and offices</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Damage-Free Installation</h4>
+                            <p>We don't dent doors, leave packaging behind, or fingerprints on walls</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-truck"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>GPS Tracked Delivery</h4>
+                            <p>Real-time tracking of our fleet for better visibility and timely delivery</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-tools"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Professional Tools</h4>
+                            <p>Equipped with specialized tools and equipment for safe and efficient installation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Quality Testing</h4>
+                            <p>Comprehensive testing and verification after installation to ensure proper functioning</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-broom"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Complete Cleanup</h4>
+                            <p>Thorough cleanup and packaging disposal after installation completion</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Multi-Floor Access</h4>
+                            <p>Specialized equipment for deliveries to any floor, including basements and high-rises</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal delay-2">
+                        <div class="feature-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Flexible Scheduling</h4>
+                            <p>Convenient scheduling options to fit your availability and requirements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //FEATURES SECTION -->
+
+        
+        
+    </main>
+{% endblock %}

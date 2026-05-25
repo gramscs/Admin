@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-section-2 text-center">
+  <div class="container">
+    <h1 class="display-5 fw-bold mb-3">Trade Partners</h1>
+    <p class="text-secondary mx-auto" style="max-width:800px;">
+      We partner with trusted carriers, warehousing providers and customs brokers to deliver end-to-end logistics solutions. To become a partner, please reach out via our <a href="{{ url_for('main.contact') }}">contact form</a>.
+    </p>
+  </div>
+</section>
+{% endblock %}
