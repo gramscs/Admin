@@ -283,6 +283,14 @@ def create_app():
     app.register_blueprint(admin_api_bp)
     app.register_blueprint(admin_bp)
 
+    # Backward-compatible endpoint aliases expected by existing templates.
+    app.add_url_rule("/", endpoint="main.index", view_func=app.view_functions["frontend.index"])
+    app.add_url_rule("/about", endpoint="main.about", view_func=app.view_functions["frontend.about"])
+    app.add_url_rule("/contact", endpoint="main.contact", view_func=app.view_functions["frontend.contact"], methods=["GET", "POST"])
+    app.add_url_rule("/track", endpoint="track.track_page", view_func=app.view_functions["frontend.track_page"], methods=["GET", "POST"])
+    app.add_url_rule("/track/pod/<consignment_number>", endpoint="track.consignment_pod", view_func=app.view_functions["frontend.consignment_pod"], methods=["GET"])
+    app.add_url_rule("/<page>", endpoint="pages.show_page", view_func=app.view_functions["frontend.show_page"], methods=["GET"])
+
     # Debug: log registered blueprint names before initializing Flask-Admin
     try:
         logger.info("Registered blueprints before Flask-Admin init: %s", list(app.blueprints.keys()))

@@ -564,12 +564,12 @@
 
   <!-- ═══════════════════════════════════════════════ NAV -->
   <nav class="alt-nav" id="altNav">
-    <a class="alt-nav__logo" href="{{ url_for('frontend.index') }}">
+    <a class="alt-nav__logo" href="{{ url_for('main.index') }}">
       <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Gram SCS Logo" />
       <span>GRAM <em>SCS</em></span>
     </a>
     <div class="alt-nav__actions">
-      <a class="alt-nav__track" href="{{ url_for('frontend.track_page') }}" target="_blank">
+      <a class="alt-nav__track" href="{{ url_for('track.track_page') }}" target="_blank">
         <i class="fa fa-map-marker" aria-hidden="true"></i> Track Shipment
       </a>
       <button class="alt-nav__menu-btn" id="openAltMenu" aria-label="Open navigation menu">
@@ -586,47 +586,47 @@
       <div style="margin-top:1rem;">
         <div class="alt-offcanvas__section">
           <h3>Company</h3>
-          <a href="{{ url_for('frontend.index') }}">Home</a>
-          <a href="{{ url_for('frontend.about') }}">About Us</a>
-          <a href="{{ url_for('frontend.show_page', page='network') }}">Network</a>
-          <a href="{{ url_for('frontend.show_page', page='trade-partners') }}">Trade Partners</a>
-          <a href="{{ url_for('frontend.contact') }}">Contact Us</a>
+          <a href="{{ url_for('main.index') }}">Home</a>
+          <a href="{{ url_for('main.about') }}">About Us</a>
+          <a href="{{ url_for('pages.show_page', page='network') }}">Network</a>
+          <a href="{{ url_for('pages.show_page', page='trade-partners') }}">Trade Partners</a>
+          <a href="{{ url_for('main.contact') }}">Contact Us</a>
         </div>
         <div class="alt-offcanvas__section">
           <h3>Logistics</h3>
-          <a href="{{ url_for('frontend.show_page', page='warehousing') }}">Warehousing</a>
-          <a href="{{ url_for('frontend.show_page', page='transportation') }}">Transportation</a>
-          <a href="{{ url_for('frontend.show_page', page='rail_freight') }}">Rail Freight</a>
-          <a href="{{ url_for('frontend.show_page', page='ocean-freight') }}">Ocean Freight</a>
-          <a href="{{ url_for('frontend.show_page', page='air-freight') }}">Air Freight</a>
-          <a href="{{ url_for('frontend.show_page', page='reverse-logistics') }}">Reverse Logistics</a>
-          <a href="{{ url_for('frontend.show_page', page='inplant-services') }}">Inplant Services</a>
+          <a href="{{ url_for('pages.show_page', page='warehousing') }}">Warehousing</a>
+          <a href="{{ url_for('pages.show_page', page='transportation') }}">Transportation</a>
+          <a href="{{ url_for('pages.show_page', page='rail_freight') }}">Rail Freight</a>
+          <a href="{{ url_for('pages.show_page', page='ocean-freight') }}">Ocean Freight</a>
+          <a href="{{ url_for('pages.show_page', page='air-freight') }}">Air Freight</a>
+          <a href="{{ url_for('pages.show_page', page='reverse-logistics') }}">Reverse Logistics</a>
+          <a href="{{ url_for('pages.show_page', page='inplant-services') }}">Inplant Services</a>
         </div>
         <div class="alt-offcanvas__section">
           <h3>IT & Automation</h3>
-          <a href="{{ url_for('frontend.show_page', page='iot-product-solution') }}">IoT Product Solution</a>
-          <a href="{{ url_for('frontend.show_page', page='process-improvement-and-automation') }}">Process Improvement & Automation</a>
+          <a href="{{ url_for('pages.show_page', page='iot-product-solution') }}">IoT Product Solution</a>
+          <a href="{{ url_for('pages.show_page', page='process-improvement-and-automation') }}">Process Improvement & Automation</a>
         </div>
         <div class="alt-offcanvas__section">
           <h3>Freight Forwarding</h3>
-          <a href="{{ url_for('frontend.show_page', page='import-services') }}">Import Services</a>
-          <a href="{{ url_for('frontend.show_page', page='export-services') }}">Export Services</a>
-          <a href="{{ url_for('frontend.show_page', page='custom-clearance-activity') }}">Custom Clearance</a>
-          <a href="{{ url_for('frontend.show_page', page='post-shipment-services') }}">Post Shipment Services</a>
-          <a href="{{ url_for('frontend.show_page', page='documentation') }}">Documentation</a>
+          <a href="{{ url_for('pages.show_page', page='import-services') }}">Import Services</a>
+          <a href="{{ url_for('pages.show_page', page='export-services') }}">Export Services</a>
+          <a href="{{ url_for('pages.show_page', page='custom-clearance-activity') }}">Custom Clearance</a>
+          <a href="{{ url_for('pages.show_page', page='post-shipment-services') }}">Post Shipment Services</a>
+          <a href="{{ url_for('pages.show_page', page='documentation') }}">Documentation</a>
         </div>
         <div class="alt-offcanvas__section">
           <h3>Value Added</h3>
-          <a href="{{ url_for('frontend.show_page', page='labelling') }}">Labelling</a>
-          <a href="{{ url_for('frontend.show_page', page='packaging') }}">Packaging</a>
-          <a href="{{ url_for('frontend.show_page', page='kitting') }}">Kitting</a>
-          <a href="{{ url_for('frontend.show_page', page='product-installation') }}">Product Installation</a>
-          <a href="{{ url_for('frontend.show_page', page='management-information-system') }}">Management Information System</a>
+          <a href="{{ url_for('pages.show_page', page='labelling') }}">Labelling</a>
+          <a href="{{ url_for('pages.show_page', page='packaging') }}">Packaging</a>
+          <a href="{{ url_for('pages.show_page', page='kitting') }}">Kitting</a>
+          <a href="{{ url_for('pages.show_page', page='product-installation') }}">Product Installation</a>
+          <a href="{{ url_for('pages.show_page', page='management-information-system') }}">Management Information System</a>
         </div>
         <div class="alt-offcanvas__section">
           <h3>Project</h3>
-          <a href="{{ url_for('frontend.show_page', page='project-logistics') }}">Project Logistics</a>
-          <a href="{{ url_for('frontend.show_page', page='chartering-services') }}">Chartering Services</a>
+          <a href="{{ url_for('pages.show_page', page='project-logistics') }}">Project Logistics</a>
+          <a href="{{ url_for('pages.show_page', page='chartering-services') }}">Chartering Services</a>
         </div>
       </div>
     </div>
@@ -752,10 +752,10 @@
             performance.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem;">
-            <a href="{{ url_for('frontend.about') }}" class="btn-lime" style="font-size:0.9rem;padding:0.7rem 1.6rem;">
+            <a href="{{ url_for('main.about') }}" class="btn-lime" style="font-size:0.9rem;padding:0.7rem 1.6rem;">
               Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </a>
-            <a href="{{ url_for('frontend.show_page', page='network') }}" class="btn-ghost" style="font-size:0.9rem;padding:0.7rem 1.6rem;">
+            <a href="{{ url_for('pages.show_page', page='network') }}" class="btn-ghost" style="font-size:0.9rem;padding:0.7rem 1.6rem;">
               Our Network
             </a>
           </div>
@@ -866,7 +866,7 @@
         <!-- Form -->
         <div class="alt-form-card">
           <h3>Send a Message</h3>
-          <form id="altContactForm" action="{{ url_for('frontend.contact') }}" method="post" novalidate>
+          <form id="altContactForm" action="{{ url_for('main.contact') }}" method="post" novalidate>
             <input type="hidden" name="source" value="homepage" />
             <div class="alt-form-row">
               <div class="alt-field">
@@ -905,7 +905,7 @@
   <footer class="alt-footer">
     <div class="alt-footer__grid">
       <div class="alt-footer__brand">
-        <a href="{{ url_for('frontend.index') }}" style="display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;">
+        <a href="{{ url_for('main.index') }}" style="display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;">
           <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Gram SCS Logo" style="height:36px;" />
           <span style="font-family:var(--font-head);font-weight:800;font-size:1.05rem;color:#fff;">GRAM <em style="color:var(--c-lime);font-style:normal;">SCS</em></span>
         </a>
@@ -913,27 +913,27 @@
       </div>
       <div class="alt-footer__col">
         <h4>Quick Links</h4>
-        <a href="{{ url_for('frontend.index') }}">Home</a>
-        <a href="{{ url_for('frontend.about') }}">About Us</a>
-        <a href="{{ url_for('frontend.show_page', page='network') }}">Network</a>
-        <a href="{{ url_for('frontend.show_page', page='trade-partners') }}">Trade Partners</a>
-        <a href="{{ url_for('frontend.contact') }}">Contact Us</a>
+        <a href="{{ url_for('main.index') }}">Home</a>
+        <a href="{{ url_for('main.about') }}">About Us</a>
+        <a href="{{ url_for('pages.show_page', page='network') }}">Network</a>
+        <a href="{{ url_for('pages.show_page', page='trade-partners') }}">Trade Partners</a>
+        <a href="{{ url_for('main.contact') }}">Contact Us</a>
       </div>
       <div class="alt-footer__col">
         <h4>Services</h4>
-        <a href="{{ url_for('frontend.show_page', page='warehousing') }}">Warehousing</a>
-        <a href="{{ url_for('frontend.show_page', page='transportation') }}">Transportation</a>
-        <a href="{{ url_for('frontend.show_page', page='ocean-freight') }}">Ocean Freight</a>
-        <a href="{{ url_for('frontend.show_page', page='air-freight') }}">Air Freight</a>
-        <a href="{{ url_for('frontend.show_page', page='export-services') }}">Export Services</a>
-        <a href="{{ url_for('frontend.show_page', page='import-services') }}">Import Services</a>
+        <a href="{{ url_for('pages.show_page', page='warehousing') }}">Warehousing</a>
+        <a href="{{ url_for('pages.show_page', page='transportation') }}">Transportation</a>
+        <a href="{{ url_for('pages.show_page', page='ocean-freight') }}">Ocean Freight</a>
+        <a href="{{ url_for('pages.show_page', page='air-freight') }}">Air Freight</a>
+        <a href="{{ url_for('pages.show_page', page='export-services') }}">Export Services</a>
+        <a href="{{ url_for('pages.show_page', page='import-services') }}">Import Services</a>
       </div>
       
     </div>
     <div class="alt-footer__bottom">
       <p>&copy; 2026 GRAM SCS. All rights reserved.</p>
       <div class="alt-footer__bottom-links">
-        <a href="{{ url_for('frontend.index') }}">← Classic Homepage</a>
+        <a href="{{ url_for('main.index') }}">← Classic Homepage</a>
         <a href="#top">Back to Top</a>
       </div>
     </div>

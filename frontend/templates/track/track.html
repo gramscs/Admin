@@ -15,14 +15,14 @@
     <div class="container-fluid py-2">
         <div class="navbar-inner d-flex align-items-center justify-content-between">
             <!-- Logo -->
-            <a class="navbar-brand" href="{{ url_for('frontend.index') }}">
+            <a class="navbar-brand" href="{{ url_for('main.index') }}">
                 <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Gram SCS Logo" class="img-fluid logo-img">
             </a>
 
             <!-- Right side actions container -->
             <div class="d-flex align-items-center">
                 <!-- Track Shipment Button (visible on medium screens and above) -->
-                <a href="{{ url_for('frontend.track_page') }}" target="_blank">
+                <a href="{{ url_for('track.track_page') }}" target="_blank">
                     <i class="fa fa-map-marker me-2"></i> Track Shipment
                 </a>
 
@@ -48,54 +48,54 @@
             <div class="menu-modal-sections">
                 <div class="menu-section">
                     <h3 class="menu-section-title">About</h3>
-                    <a href="{{ url_for('frontend.about') }}" class="menu-link">About Us</a>
+                    <a href="{{ url_for('main.about') }}" class="menu-link">About Us</a>
                 </div>
                 <div class="menu-section">
                     <h3 class="menu-section-title">Logistics</h3>
-                    <a href="{{ url_for('frontend.show_page', page='warehousing') }}" class="menu-link">Warehousing</a>
-                    <a href="{{ url_for('frontend.show_page', page='transportation') }}" class="menu-link">Transportation</a>
-                    <a href="{{ url_for('frontend.show_page', page='rail_freight') }}" class="menu-link">Rail Freight</a>
-                    <a href="{{ url_for('frontend.show_page', page='ocean-freight') }}" class="menu-link">Ocean Freight</a>
-                    <a href="{{ url_for('frontend.show_page', page='air-freight') }}" class="menu-link">Air Freight</a>
-                    <a href="{{ url_for('frontend.show_page', page='reverse-logistics') }}" class="menu-link">Reverse Logistics</a>
-                    <a href="{{ url_for('frontend.show_page', page='inplant-services') }}" class="menu-link">Inplant Services</a>
+                    <a href="{{ url_for('pages.show_page', page='warehousing') }}" class="menu-link">Warehousing</a>
+                    <a href="{{ url_for('pages.show_page', page='transportation') }}" class="menu-link">Transportation</a>
+                    <a href="{{ url_for('pages.show_page', page='rail_freight') }}" class="menu-link">Rail Freight</a>
+                    <a href="{{ url_for('pages.show_page', page='ocean-freight') }}" class="menu-link">Ocean Freight</a>
+                    <a href="{{ url_for('pages.show_page', page='air-freight') }}" class="menu-link">Air Freight</a>
+                    <a href="{{ url_for('pages.show_page', page='reverse-logistics') }}" class="menu-link">Reverse Logistics</a>
+                    <a href="{{ url_for('pages.show_page', page='inplant-services') }}" class="menu-link">Inplant Services</a>
                 </div>
                 <div class="menu-section">
                     <h3 class="menu-section-title">IT & Automation</h3>
-                    <a href="{{ url_for('frontend.show_page', page='iot-product-solution') }}" class="menu-link">IoT Product
+                    <a href="{{ url_for('pages.show_page', page='iot-product-solution') }}" class="menu-link">IoT Product
                         Solution</a>
-                    <a href="{{ url_for('frontend.show_page', page='process-improvement-and-automation') }}"
+                    <a href="{{ url_for('pages.show_page', page='process-improvement-and-automation') }}"
                         class="menu-link">Process Improvement & Automation</a>
                 </div>
                 <div class="menu-section">
                     <h3 class="menu-section-title">Freight Forwarding</h3>
-                    <a href="{{ url_for('frontend.show_page', page='import-services') }}" class="menu-link">Import Services</a>
-                    <a href="{{ url_for('frontend.show_page', page='export-services') }}" class="menu-link">Export Services</a>
-                    <a href="{{ url_for('frontend.show_page', page='custom-clearance-activity') }}" class="menu-link">Custom
+                    <a href="{{ url_for('pages.show_page', page='import-services') }}" class="menu-link">Import Services</a>
+                    <a href="{{ url_for('pages.show_page', page='export-services') }}" class="menu-link">Export Services</a>
+                    <a href="{{ url_for('pages.show_page', page='custom-clearance-activity') }}" class="menu-link">Custom
                         Clearance Activity</a>
-                    <a href="{{ url_for('frontend.show_page', page='post-shipment-services') }}" class="menu-link">Post Shipment
+                    <a href="{{ url_for('pages.show_page', page='post-shipment-services') }}" class="menu-link">Post Shipment
                         Services</a>
-                    <a href="{{ url_for('frontend.show_page', page='documentation') }}" class="menu-link">Documentation</a>
+                    <a href="{{ url_for('pages.show_page', page='documentation') }}" class="menu-link">Documentation</a>
                 </div>
                 <div class="menu-section">
                     <h3 class="menu-section-title">Value Added</h3>
-                    <a href="{{ url_for('frontend.show_page', page='labelling') }}" class="menu-link">Labelling</a>
-                    <a href="{{ url_for('frontend.show_page', page='packaging') }}" class="menu-link">Packaging</a>
-                    <a href="{{ url_for('frontend.show_page', page='kitting') }}" class="menu-link">Kitting</a>
-                    <a href="{{ url_for('frontend.show_page', page='product-installation') }}" class="menu-link">Product
+                    <a href="{{ url_for('pages.show_page', page='labelling') }}" class="menu-link">Labelling</a>
+                    <a href="{{ url_for('pages.show_page', page='packaging') }}" class="menu-link">Packaging</a>
+                    <a href="{{ url_for('pages.show_page', page='kitting') }}" class="menu-link">Kitting</a>
+                    <a href="{{ url_for('pages.show_page', page='product-installation') }}" class="menu-link">Product
                         Installation</a>
-                    <a href="{{ url_for('frontend.show_page', page='management-information-system') }}" class="menu-link">Management
+                    <a href="{{ url_for('pages.show_page', page='management-information-system') }}" class="menu-link">Management
                         Information System</a>
                 </div>
                 <div class="menu-section">
                     <h3 class="menu-section-title">Project</h3>
-                    <a href="{{ url_for('frontend.show_page', page='project-logistics') }}" class="menu-link">Project Logistics</a>
-                    <a href="{{ url_for('frontend.show_page', page='chartering-services') }}" class="menu-link">Chartering
+                    <a href="{{ url_for('pages.show_page', page='project-logistics') }}" class="menu-link">Project Logistics</a>
+                    <a href="{{ url_for('pages.show_page', page='chartering-services') }}" class="menu-link">Chartering
                         Services</a>
                 </div>
                 <div class="menu-section">
                     <h3 class="menu-section-title">Track Your Shipment</h3>
-                    <a href="{{ url_for('frontend.track_page') }}" target="_blank">
+                    <a href="{{ url_for('track.track_page') }}" target="_blank">
                         Track Your Shipment
                     </a>
                 </div>
@@ -149,7 +149,7 @@
 <section class="track-shell mt-3 mb-4">
     <div class="track-hero">
         <div class="track-hero-top">
-            <a href="{{ url_for('frontend.index') }}" class="track-home">
+            <a href="{{ url_for('main.index') }}" class="track-home">
                 <span>Back to Home</span>
             </a>
         </div>
@@ -271,7 +271,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     const btn = document.getElementById('download-pod-btn');
     if (!btn) return;
-    const url = "{{ url_for('frontend.consignment_pod', consignment_number=consignment.consignment_number) }}";
+    const url = "{{ url_for('track.consignment_pod', consignment_number=consignment.consignment_number) }}";
     btn.addEventListener('click', async function(){
         btn.disabled = true;
         const original = btn.innerText;
